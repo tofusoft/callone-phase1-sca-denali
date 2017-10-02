@@ -1,0 +1,23 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-control-item {	
+	height: $sc-target-size;
+	line-height: $sc-target-size;
+}	
+
+.product-list-control-item-label {
+	cursor: pointer;
+	padding: $sc-base-padding 0;
+	margin-bottom: $sc-base-margin;
+	display: inline-block;
+	width: 100%
+}
+
+.product-list-control-item-checkbox {
+	@extend .input-checkbox;
+}

@@ -1,0 +1,63 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+.item-details-content {
+
+	@media (min-width: $screen-md-min) {
+		margin-top: $sc-base-margin * 1; /* Edited by Flo*/
+	}
+}
+
+.item-details-rating-header {
+	margin-top: $sc-base-margin;
+	margin-bottom: $sc-base-margin * 1; /* Edited by Flo*/
+
+	.global-views-star-rating {
+		float: none;
+	}
+}
+
+
+.item-details-sku-container {
+	margin-top: $sc-base-margin * 2; /* Edited by Flo*/
+	margin-bottom: $sc-base-margin;
+	color: $sc-color-theme;
+	@extend .sku;
+}
+
+
+.item-details-tab-title a {
+	background-color:$sc-color-theme-background-lightest;
+	padding: $sc-base-padding * 2 $sc-base-padding * 2;
+	float:left;
+	margin-right: 2px;
+	font-weight: $sc-font-weight-semibold;
+	font-size: $sc-h4-font-size;
+	text-transform: uppercase;
+	color:$sc-color-theme;
+}
+
+.item-details-tab-title:only-child a{
+	display:none;
+}
+.item-details-tab-title.active a {
+	background-color:$sc-color-theme-background-light;
+	color: $sc-color-theme;
+}
+
+.item-details-rating-header {
+	.global-views-star-rating-area {
+		margin-right: $sc-base-margin;
+	}
+	.global-views-star-rating i {
+		font-size: 16px; /* Edited by Flo*/
+	}
+}
+
+.item-details-content-header-title {
+text-transform: none; } 

@@ -1,0 +1,35 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-msr-package-details-quantity {}
+.order-wizard-msr-package-details-quantity-count {
+	margin-bottom: $sc-small-margin;
+}
+
+.order-wizard-msr-package-details-quantity-count-label {
+	@extend .sc-label;
+}
+
+.order-wizard-msr-package-details-quantity-count-value {
+	@extend .sc-value;
+}
+
+.order-wizard-msr-package-details-quantity-amount {
+	margin-bottom: $sc-small-margin;
+}
+
+.order-wizard-msr-package-details-quantity-amount-label {
+	@extend .sc-label;
+}
+
+.order-wizard-msr-package-details-quantity-amount-value {
+	@extend .sc-value;
+}
+
+.order-wizard-msr-package-details-quantity-crossed {
+	@extend .old-price;
+}

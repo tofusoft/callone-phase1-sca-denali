@@ -1,0 +1,96 @@
+{
+"items": [
+{
+
+"custitem_bike_type": "Street",
+"stockdescription": "New",
+"itemid": "gt0019",
+"pricelevel1_formatted": "$1,599.99",
+"custitem_bike_brands": "GT",
+"storedisplayimage": "",
+"outofstockbehavior": "Allow back orders with no out-of-stock message",
+"storedisplayname2": "COMPE",
+"internalid": 137,
+"itemimages_detail": {
+"White": "http://localhost/Shopping/pics/COMPE_White.png",
+"Red": {
+"img2": "http://localhost/Shopping/pics/COMPE_Red-img2.jpeg",
+"img1": "http://localhost/Shopping/pics/COMPE_Red-img1.png",
+"img7": "http://localhost/Shopping/pics/COMPE_Red-img7.jpeg",
+"img5": "http://localhost/Shopping/pics/COMPE_Red-img5.jpeg",
+"img6": "http://localhost/Shopping/pics/COMPE_Red-img6.jpeg",
+"img3": "http://localhost/Shopping/pics/COMPE_Red-img3.jpeg",
+"img4": "http://localhost/Shopping/pics/COMPE_Red-img4.png"
+},
+"Green": "http://localhost/Shopping/pics/COMPE_Green.png",
+"Yellow": "http://localhost/Shopping/pics/COMPE_Yellow.png"
+},
+
+
+"defaultcategory_detail": [
+{
+"label": "Category",
+"url": "Category"
+},
+{
+"label": "Subcategory",
+"url": "subcategory"
+}
+],
+
+"pricelevel1": 1599.99,
+"pagetitle": "",
+"onlinecustomerprice_detail": {
+"onlinecustomerprice_formatted": "$1,599.99",
+"onlinecustomerprice": 1599.99
+},
+"custitem_bike_specs":"asdasd",
+"itemtype": "InvtPart",
+"storedetaileddescription": "<b>asdasd</b>",
+"outofstockmessage": "",
+"itemoptions_detail": {
+"fields": [
+{
+"values": [
+{
+"label": ""
+},
+{
+"label": "Green",
+"internalid": "1"
+},
+{
+"label": "Yellow",
+"internalid": "2"
+},
+{
+"label": "Red",
+"internalid": "3"
+},
+{
+"label": "White",
+"internalid": "4"
+}
+],
+"label": "Rim Color",
+"internalid": "custcol_rim_color",
+"type": "select"
+}
+]
+},
+"quantityavailable": 0,
+"custitem_ns_pr_count": 2,
+"custitem_ns_pr_rating": 2.5,
+
+"relateditemsdescription": "",
+"displayname": ""
+}
+],
+"locale": {
+"country": "US",
+"language": "en",
+"currency": "USD"
+},
+"cacheable": false,
+"code": 200
+}

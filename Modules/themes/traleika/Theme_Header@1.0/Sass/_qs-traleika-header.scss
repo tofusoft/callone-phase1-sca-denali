@@ -1,0 +1,209 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+$sc-main-nav-height: 30px;
+$sc-main-nav-link-height: 24px;
+$sc-sidebar-size: 246px;
+$sc-secondary-menu-height: 42px;
+
+.header-top-menu {
+	background-color: $sc-color-theme;
+	height: $sc-target-size;
+}
+
+.header-menu-search-icon{
+	@extend .fa;
+	@extend %fa-search;
+	color: $sc-color-primary
+}
+
+.header-menu-searchmobile-icon {
+	@extend .fa;
+	@extend %fa-search;
+	color: $sc-color-tertiary;
+}
+
+.header-sidebar-toggle {
+	background: $sc-color-theme-background;
+	width: $sc-target-size;
+	height: $sc-target-size;
+	text-align:center;
+}
+
+.header-main-wrapper {
+	background-color: $sc-color-theme-background-light;
+}
+
+.header-main-nav {
+	@extend .container;
+	min-height: $sc-main-nav-height;
+	background-color: $sc-color-theme-background-lightest;
+
+	@media (min-width: $screen-md-min) {
+		background-color:  $sc-color-theme-background-light;
+	}
+}
+
+//////////////////////////////////////////////////////////////
+//secondary nav styles
+
+.header-secondary-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: - $sc-sidebar-size;
+	width: $sc-sidebar-size;
+	background-color: $sc-color-theme-background;
+	// z-index: 1000;
+
+	@media (min-width: $screen-md-min) {
+		position: relative;
+		
+		background-color: $sc-color-theme-background-lightest;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		width: auto;
+		height: $sc-secondary-menu-height;
+		border-top: 1px solid $sc-color-theme-border;
+		border-bottom: 1px solid $sc-color-theme-border;
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//header maxi menu
+
+.header-menu-level1 {
+	margin-left: - $sc-base-padding * 2;
+	text-align: center;
+}
+
+.header-menu-level1 > li {
+	float: none;
+	display: inline-block;
+}
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	height: $sc-secondary-menu-height;
+	line-height: $sc-secondary-menu-height;
+	padding: 0 $sc-base-padding*2;
+	margin-right: $sc-base-margin;
+	font-weight: $sc-font-weight-normal;
+	color:$sc-color-secondary;
+	@extend .small-title;
+}
+
+.header-menu-level1-anchor:hover{
+	color: $sc-color-link-hover;
+}
+
+.open .header-menu-level1-anchor{
+	color: $sc-color-dark-copy;
+}
+///////////////////////////////////////////////////////////////
+//header logo
+
+.header-logo-wrapper {
+
+	float:left;
+	text-align: center;
+	margin: auto;
+
+		@media (min-width: $screen-md-min) {
+			float: none;
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+//header settings
+
+.header-menu-settings-dropdown {
+/*	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);*/
+}
+
+
+.header-right-menu {
+	float: right;
+
+	@media (min-width: $screen-md-min) {
+		float: none;
+		background-color: $sc-color-theme-background;
+/*		height: $sc-target-size;*/
+		margin-top: ($sc-main-nav-height - $sc-main-nav-link-height) / 2;
+		margin-bottom: ($sc-main-nav-height - $sc-main-nav-link-height) / 2;
+		height: $sc-main-nav-height
+	}
+}
+
+.header-top-message {
+	display: none;
+	
+	@media (min-width: $screen-md-min) {
+		float: left;
+		width: 65%;
+		height: $sc-main-nav-height;
+		line-height: $sc-main-nav-height;
+		text-align: center;
+		margin: auto;
+		display: inline-block;
+	}
+
+}
+
+.header-banner-top-message {
+	font-size: $sc-h4-font-size;
+	color: $sc-color-tertiary;
+}
+.header-menu-cart-legend {
+	background-color: $sc-color-theme-background-light;
+	padding: 0 $sc-base-padding * 3;
+	float:right;
+	display: none;
+	color: $sc-color-theme;
+	@media(min-width: $screen-md-min) {
+		display: inline;
+	}
+}
+
+.header-menu-cart-icon {
+	@extend .fa;
+	@extend %fa-shopping-cart;
+	font-size: $sc-h3-font-size;
+	line-height: $sc-main-nav-height;
+	min-width: $sc-target-size;
+	color: $sc-color-tertiary;
+}
+
+///////////////////////////////////////////////////////////////
+//main nav positioning
+
+%header-link {
+	display: block;
+	min-width: $sc-target-size;
+	height: $sc-target-size;
+	line-height: $sc-target-size;
+	color: $sc-color-theme-light;
+	text-align: center;
+	position: relative;
+
+		@media (min-width: $screen-md-min) {
+		float: none;
+		background-color: transparent;
+/*		height: $sc-target-size;*/
+		margin: 0;
+		height: $sc-main-nav-height;
+		line-height: $sc-main-nav-height;
+		
+	}
+}
+
+.header-menu-cart {
+	float: right;
+	position: relative;
+}

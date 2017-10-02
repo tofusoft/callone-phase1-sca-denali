@@ -1,0 +1,46 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+$sc-secondary-menu-height: 42px;
+
+.header-menu-level1-anchor {
+	display: block;
+	position: relative;
+	height: $sc-secondary-menu-height;
+	line-height: $sc-secondary-menu-height;
+	padding: 0 $sc-base-padding*2;
+	margin-right: $sc-base-margin;
+	font-weight: $sc-font-weight-normal;
+	color:$sc-color-secondary;
+	@extend .small-title;
+}
+
+.header-menu-search-link {
+	@extend .middle-title-navigable;
+	font-size: $sc-h2-font-size;
+	padding: $sc-base-padding * 2;
+	color: $sc-color-tertiary;
+	cursor: pointer;
+	position: relative;
+	line-height: 20px;
+	background: $sc-color-theme-background;
+
+	@media (min-width: $screen-md-min) {
+		background: transparent;
+	}
+}
+
+.header-menu-searchmobile-link {
+	@extend .icon-button-primary;
+	margin-right: $sc-base-margin * 2;
+	cursor: pointer;
+}
+
+.header-menu-searchmobile-link.active {
+	background: $sc-color-theme-background;
+}

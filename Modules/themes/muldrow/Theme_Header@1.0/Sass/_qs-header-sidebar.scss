@@ -1,0 +1,26 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+///////////////////////////////////////////////////////////////
+// header sidebar menu look and feel
+
+.header-sidebar-wrapper .header-sidebar-menu-separator {
+	background-color: $sc-color-theme-background-light;
+
+	@media (min-width: $screen-md-min) {
+		background-color: $sc-color-theme-background;
+
+	}
+}
+
+.header-sidebar-menu-wrapper .header-sidebar-menu-back {
+	padding: $sc-base-padding * 3;
+	margin:0;
+	background: $sc-color-theme-light;
+	color: $sc-color-link;
+	text-transform: capitalize;
+}

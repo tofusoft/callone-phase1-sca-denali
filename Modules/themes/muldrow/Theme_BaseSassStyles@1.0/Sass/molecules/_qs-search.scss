@@ -1,0 +1,246 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.site-search-wrapper {
+    margin: -35px 0 12px;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+        width: auto;
+        margin: -55px 0 12px;
+    }
+}
+
+// Search Content dropdown
+.nav-search {
+    display: none;
+    border-bottom: 1px solid $sc-color-theme-border;
+    border-top: 1px solid $sc-color-theme-border;
+    width: 100%;
+
+    @media (min-width: $screen-md-min) {
+        padding: $sc-base-padding * 2 0;
+        border-top:0;
+    }
+}
+.nav-search-content {
+    @extend .container;
+
+
+    clear:both;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    position:relative;
+
+    @media (min-width: $screen-md-min) {
+        width: 400px;
+        margin: 0 auto 0;
+         border: 1px solid $sc-color-theme-border;
+    }
+}
+
+// Search Content form
+.nav-search-content-input {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.nav-search-content-input span {
+    width:100%;
+}
+.nav-search-input-icon {
+    color: $sc-color-theme-light;
+    font-size: $sc-h2-font-size;
+    left: 10px;
+    position: absolute;
+    top: 8px;
+    z-index: 99;
+
+    @extend .fa;
+    @extend %fa-search;
+}
+.nav-search-input {
+    padding-left: $sc-base-padding * 8;
+    height: 37px;
+    box-shadow: none;
+    width: calc(100% - #{$sc-base-padding * 8} - 51px);
+
+    width: expression(100% - #{$sc-base-padding * 8} - 51px);/* IE-OLD */
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    @media (min-width:$screen-md-min){
+        width: calc(100% - #{$sc-base-padding * 18});
+        width: expression(100% - #{$sc-base-padding * 18});/* IE-OLD */
+    }
+}
+.nav-search-input:focus {
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+.nav-search-input-reset {
+    background: #FFF;
+    cursor: pointer;
+    display: none;
+    font-size: $sc-h4-font-size;
+    height: 37px;
+    padding: $sc-base-padding * 2;
+    position: absolute;
+    right: 51px;
+    top: 0;
+    width: 37px;
+
+    @media (min-width: $screen-md-min) {
+        right: 50px;
+    }
+}
+.nav-search-input-reset-icon {
+    @extend .fa;
+    @extend %fa-times-circle;
+    color: $sc-color-theme-light;
+    font-size: $sc-h3-font-size;
+}
+.nav-search-button-submit {
+    border-radius: 0;
+    border: 0;
+    background: $sc-color-primary;
+    color: $sc-color-tertiary;
+    height: 37px;
+    padding: 0 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav-search-button-submit:hover, .nav-search-button-submit:focus {
+    background: $sc-color-tertiary-hover;
+    color: $sc-color-tertiary;
+}
+
+// Serach Button close toggle (these styles were removed, not necessary in QS theme)
+
+// Typeahead plugin
+.tt-dropdown-menu {
+    width:100%;
+    background:#FFF;
+    margin-top: 1px;
+    border-left: 1px solid rgba(91, 127, 140, 0.3);
+    border-right: 1px solid rgba(91, 127, 140, 0.3);
+    border-bottom: 1px solid rgba(91, 127, 140, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175);
+    -webkit-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.175);
+    overflow:hidden;
+
+    @media (min-width: $screen-md-min){
+        margin-top: $sc-base-margin * 2;
+    }
+}
+.tt-dropdown-menu-shadow-fix {
+    @include box-shadow(inset 0px 4px 6px -6px $sc-color-theme);
+    height: 3px;
+}
+.tt-suggestions{
+    cursor:pointer;
+    cursor:hand;
+    padding:0;
+    font-size:$sc-small-font-size;
+}
+// Typeahead headers
+.all-results {
+    display:block;
+    border-bottom:1px solid $sc-color-theme-border;
+    color:$sc-color-link;
+    padding-bottom:$sc-base-padding * 2;
+    font-size:$sc-h4-font-size;
+    margin:$sc-base-margin * 4 $sc-base-margin * 7 $sc-base-margin * 2 $sc-base-margin * 7;
+    text-transform: capitalize;
+}
+.all-results:hover {
+    color: $sc-color-link-hover;
+    text-decoration: underline;
+}
+.no-results{
+    @extend .all-results;
+    border-bottom:0;
+    color: $sc-color-copy;
+}
+.no-results:hover{
+    text-decoration: none;
+    color: $sc-color-copy;
+}
+.searching{
+    @extend .no-results;
+    color:$sc-color-copy;
+}
+// Typeahead Item
+.item-results {
+    padding: $sc-base-padding * 3 0;
+    cursor: pointer;
+    display: block;
+    @extend .clearfix;
+}
+.item-results:hover {
+    background:$sc-color-theme-background-light;
+}
+.tt-cursor:first-child {
+    background: none;
+}
+.tt-cursor {
+    background:$sc-color-theme-background-light;
+}
+.item-results-image {
+    width: 25%;
+    float: left;
+    display: none;
+
+    padding-left:$sc-base-padding * 7;
+
+    @media (min-width: $screen-sm-min){
+        display: block;
+    }
+}
+.item-results-content {
+    width: 75%;
+    float: left;
+    padding-left:$sc-base-padding * 7;
+
+    @media (min-width:$screen-sm-min) {
+        padding: 0 $sc-base-padding * 3;
+    }
+    .global-views-star-rating {
+        display: none;
+        @media (min-width:$screen-sm-min){
+            display: block;
+        }
+    }
+}
+.item-results-title {
+    margin-bottom:$sc-base-margin;
+    display:block;
+    font-size: $sc-base-font-size;
+}
+.tt-highlight {
+    font-weight: $sc-font-weight-semibold;
+    color: $sc-color-primary;
+}
+.item-results:hover .item-results-title {
+    color: $sc-color-link;
+}
+.item-results-rate {
+    display: none;
+    margin-top:$sc-base-margin;
+
+    @media (min-width: $screen-sm-min){
+        display: block;
+    }
+    i{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}

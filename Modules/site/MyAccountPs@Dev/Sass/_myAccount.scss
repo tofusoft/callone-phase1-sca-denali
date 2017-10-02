@@ -1,0 +1,271 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$ink-1: #258FCE;
+$ink-2: #2553A2;
+$ink-3: #fe4819;
+$ink-4: #666666;
+/*-------------------------------*/
+.myaccount-layout-header {
+  box-shadow: none;
+}
+
+.global-views-breadcrumb {
+  padding: 20px 0 10px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $ink-1;
+  border-radius: 0;
+  background: none;
+  li a {
+    color: $ink-1;
+    &:hover {
+      color: $ink-2;
+      text-decoration: underline;
+    }
+  }
+  .global-views-breadcrumb-item-active {
+    color: $ink-3;
+    font-weight: 600;
+  }
+}
+
+.global-views-breadcrumb {
+  border-radius: 0;
+  background: none;
+  li {
+    margin-right: 5px;
+    &:before {
+      content: "" !important;
+      display: none;
+    }
+  }
+}
+
+.menu-tree {
+  border-top: 1px solid $ink-1;
+  border-bottom: 1px solid $ink-1;
+  .menu-tree-node {
+    &.open > a {
+      background: $ink-2;
+      color: white;
+      &:hover {
+        background: $ink-2;
+        color: white;
+      }
+    }
+    a {
+      text-transform: capitalize;
+      background: lighten($ink-1, 45%);
+      color: darken($ink-1, 30%);
+      border-bottom: 1px solid lighten($ink-1, 36%);
+      &:hover {
+        background: lighten($ink-1, 35%);
+      }
+    }
+  }
+}
+
+#menu-tree-node-cases .menu-tree-node-submenu-wrapper {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.myaccount-layout-side-nav {
+  margin-bottom: 20px;
+}
+
+.datepicker .today.day {
+  background-color: #2553A2;
+  color: white;
+}
+
+.myaccount-layout-main {
+  input[type="text"], select[class], .list-header-view-accordion-body-button-sort {
+    border: 1px solid lighten($ink-2, 25%);
+    &:focus, &:hover {
+      border: 1px solid lighten($ink-2, 10%);
+      outline: none;
+    }
+  }
+  .blueButton {
+    background: $ink-1;
+    color: white;
+    border: 1px solid darken($ink-1, 10%);
+    &:hover {
+      background: darken($ink-1, 10%);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /*------overview_home----------*/
+  .overview-home-mysettings {
+    background: lighten($ink-1, 45%);
+    border: 1px solid lighten($ink-1, 36%);
+    margin-top: 20px !important;
+    a {
+      @extend .blueButton;
+    }
+
+  }
+  .overview-profile-card, .overview-shipping-card, .overview-payment-card, .balance-indicator, .balance-summary-credits-body, .balance-summary-account-details-body {
+    border: 1px solid lighten($ink-1, 36%);
+  }
+  .overview-shipping-card .address-details {
+    border: none;
+  }
+  .overview-home-orders-title, .product-list-lists-header {
+    padding: 10px 0;
+    border-top: lighten($ink-1, 45%);
+    border-bottom: lighten($ink-1, 45%);
+    h3 {
+      color: $ink-3;
+      text-transform: capitalize;
+    }
+    a.overview-home-orders-title-link {
+      margin-top: 0;
+      padding: 8px;
+      background: $ink-2;
+      color: white;
+      border-radius: 3px;
+      &:hover {
+        background: lighten($ink-2, 10%);
+      }
+    }
+  }
+  .order-history-details-summary-container, .quote-details-summary-container, .order-history-details-accordion-head-toggle-secondary, .order-history-details-info-card-info, .address-details, .order-history-shipping-group-accordion-head-toggle, .order-history-shipping-group-accordion-body {
+    border: 1px solid lighten($ink-1, 35%);
+  }
+  .order-history-details-summary-title, .quote-details-summary-title, .order-history-details-shipping-information, .order-history-details-accordion-body {
+    background: lighten($ink-1, 45%);
+  }
+  .order-history-fulfillment-header, .order-history-details-payment-transactions-table-header {
+    border-bottom: 1px solid lighten($ink-1, 35%);
+  }
+  .order-history-details-accordion-head {
+    padding: 20px;
+    background: lighten($ink-1, 45%);
+  }
+  .recordviews-actionable:hover, .recordviews-row:hover {
+    background: lighten($ink-1, 45%) !important;
+  }
+  .quote-details-accordion-head-toggle {
+    border: 1px solid lighten($ink-1, 35%);
+  }
+  .quote-details-accordion-body {
+    border: 1px solid lighten($ink-1, 35%);
+    border-top: none;
+  }
+  .quote-details-billing-info-card{
+    border: 2px solid lighten($ink-1, 35%);
+    background:  lighten($ink-1, 45%);
+  }
+
+  /*------ACCOUNT BALANCE----------*/
+  .balance-content {
+    @extend .overview-home-mysettings;
+    margin-top: 0;
+  }
+  .balance-actions {
+    margin-top: 10px;
+  }
+  .balance-print-button {
+    @extend .blueButton;
+  }
+
+  /*------INVOICES----------*/
+  .invoice-paid-list-header-button-paid, .invoice-open-list-header-button-open {
+    @extend .blueButton;
+  }
+
+  /*------PRINT A STATEMENT----------*/
+  .print-statement {
+    margin-top: 0;
+    @extend .overview-home-mysettings;
+  }
+  .print-statement-form-actions-email {
+    @extend .blueButton;
+  }
+  /*------Settings----------*/
+  .profile-information, .profile-emailpreferences, .address-edit, .creditcard-edit, .profile-update-password, .case-new {
+    margin-top: 0;
+    @extend .overview-home-mysettings;
+  }
+  .profile-emailpreferences-reset {
+    @extend .blueButton;
+  }
+}
+
+.product-list-list-details-wrapper {
+  border-bottom: 1px solid lighten($ink-1, 35%);
+  &:hover {
+    background: lighten($ink-1, 45%);
+  }
+}
+
+.item-views-stock-msg-description {
+  background: lighten($ink-1, 45%);
+}
+
+.invoice-open-list-header-button-paid {
+  border: 1px solid #1D71A3;
+  border-left: none;
+  &:hover {
+    background: lighten($ink-1, 45%);
+  }
+}
+
+.invoice-paid-list-header-button-open {
+  border: 1px solid #1D71A3;
+  border-right: none;
+  &:hover {
+    background: lighten($ink-1, 45%);
+  }
+}
+.quote-details-accordion-table-header{
+  border-bottom: 1px solid lighten($ink-1, 35%);
+}
+
+/*------------------------------------------*/
+@media (max-width: 992px) {
+  h2.myaccount-layout-title {
+    margin-top: 20px;
+  }
+  .list-header-view-filter-button {
+    @extend .blueButton;
+    i {
+      color: white;
+    }
+  }
+  .list-header-view-accordion-body-input, .print-statement-form-group-input {
+    @extend input[type="text"];
+  }
+  .list-header-view-accordion-body-header {
+    background: lighten($ink-1, 45%);
+    border: 1px solid lighten($ink-1, 36%);
+  }
+}
+
+/*------------------------------------------*/
+@media (max-width: 768px) {
+  .overview-home-orders-title {
+    padding-bottom: 30px;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  .overview-home-orders-title-link {
+    padding: 10px !important;
+  }
+  .invoice-open-list-header, .case-list-header {
+    margin-top: 15px;
+  }
+  .item-views-cell-actionable-table-first {
+    width: 50%;
+  }
+}

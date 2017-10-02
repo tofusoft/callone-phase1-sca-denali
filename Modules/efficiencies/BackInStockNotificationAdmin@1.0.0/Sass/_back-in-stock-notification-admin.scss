@@ -1,0 +1,80 @@
+.back-in-stock-notification-list-header {
+    @include clearfix();
+    border-top: 1px solid $sc-color-theme-border;
+}
+.back-in-stock-notification-list-title {
+    padding-top: $sc-base-padding * 3;
+    padding-bottom: $sc-base-padding * 3;
+    @media (min-width: $screen-sm-min){
+        float: left;
+    }
+}
+.back-in-stock-notification-list-table {
+    @extend .item-views-cell-actionable-table;
+    @extend .table-row-with-border;
+    border-bottom: 1px solid $sc-color-theme-border;
+}
+.back-in-stock-notification-list-recordviews-table {
+    @extend .recordviews-table;
+}
+.back-in-stock-notification-list-empty {
+    @extend .list-empty;
+}
+.back-in-stock-notification-td-first {
+     @extend .table-flex-tdfirst;
+     width: 25%;
+}
+.back-in-stock-notification-td-middle {
+    @extend .table-flex-middle;
+}
+.back-in-stock-notification-td-last {
+     @extend .table-flex-tdlast;
+     padding-bottom: $sc-base-padding * 3;
+     padding-top: 0;
+     vertical-align: top;
+
+     @media (min-width: $screen-sm-min) {
+        width: 18%;
+    }
+}
+.back-in-stock-notification-name {
+    margin-bottom:$sc-small-margin;
+}
+.back-in-stock-notification-name-viewonly {
+    @extend .medium-title-viewonly;
+}
+.back-in-stock-notification-thumbnail {
+    img {
+        width: $img-large;
+    }
+}
+.back-in-stock-notification-price {
+    margin-bottom: $sc-small-margin;
+}
+.back-in-stock-notification-price .back-in-stock-notification-price-lead {
+    @extend .middle-price;
+}
+.back-in-stock-notification-data {
+    color: $sc-color-theme;
+    font-size: $sc-small-font-size;
+    margin-bottom: $sc-small-margin;
+}
+.back-in-stock-notification-data-label {
+    @extend .sc-label;
+}
+.back-in-stock-notification-data-value {
+    @extend .sc-value;
+}
+.back-in-stock-notification-button-container {
+    @media(min-width: $screen-sm-min) {
+        text-align: right;
+    }
+}
+.back-in-stock-notification-delete {
+    @extend .button-secondary;
+    @extend .button-medium;
+    width: auto;
+}
+.back-in-stock-notification-list-paginator {
+    @extend .case-list-paginator;
+}

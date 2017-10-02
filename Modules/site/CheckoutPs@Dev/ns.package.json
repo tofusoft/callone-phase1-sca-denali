@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "templates": [
+            "Templates/*"
+        ],
+        "images": [
+            "Images/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/CheckoutApplication@2.0.6/Templates/checkout_layout.tpl": "Templates/Ps-checkout_layout.tpl"
+    }
+}

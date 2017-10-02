@@ -1,0 +1,22 @@
+<Bundle>
+  <param>
+    <name>SuiteCommerce Advanced Denali</name>
+    <nslogin>psgreleasetest@netsuite.com</nslogin>
+    <nscompany>QA PSG - 4122071 - SuiteCommerce Advanced Denali</nscompany>
+    <nsaccnt>4122071</nsaccnt>
+    <bundle_id>90208</bundle_id>
+    <qabundle_testfolder_id></qabundle_testfolder_id>
+    <prodcompany>NetSuite Platform Solutions Group - SuiteCommerce Advanced Denali</prodcompany>
+    <prodaccount>4199867</prodaccount>
+    <prodbundle_id>90208</prodbundle_id>
+    <devaccnt>NA</devaccnt>
+    <devbundle_id>NA</devbundle_id>
+    <baselabel>SuiteCommerce_Advanced_Denali</baselabel>
+    <version>Denali</version>
+    <datelabel>2015.09.01</datelabel>
+    <buildno>2</buildno>
+    <scrum>psgrelease-auto@netsuite.com</scrum>
+    <versioningmode>MINOR</versioningmode>
+    <qabundle_folder_id>NA</qabundle_folder_id>
+  </param>
+</Bundle>

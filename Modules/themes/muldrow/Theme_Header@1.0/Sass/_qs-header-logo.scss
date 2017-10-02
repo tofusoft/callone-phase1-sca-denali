@@ -1,0 +1,36 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+/*
+	this file is not overriding a reference file, it's included in the sass modules of
+	all applications, here you can override existing styles or add new ones
+ */
+
+.header-logo {
+	height: 105px;
+	line-height: 72px;
+
+	@media (min-width: $screen-md-min) {
+		line-height: 105px;
+	}
+}
+.header-logo-image {
+	max-width: 274px;
+	width: 100%;
+
+	@media (min-width: $screen-md-min) {
+		max-width: 100%;
+	}
+}
+
+/* styles for checkout */
+.header-simplified-header {
+	height: auto;
+}
+.header-simplified-header-logo .header-logo {
+	line-height: 105px;
+}

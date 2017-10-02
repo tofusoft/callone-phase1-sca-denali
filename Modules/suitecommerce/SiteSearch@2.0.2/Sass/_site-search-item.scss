@@ -1,0 +1,22 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.site-search-item-results {
+	@extend .item-results;
+}
+
+.site-search-item-results-image {
+	@extend .item-results-image;
+}
+
+.site-search-item-results-content {
+	@extend .item-results-content;
+}
+
+.site-search-item-results-title {
+	@extend .item-results-title;
+}

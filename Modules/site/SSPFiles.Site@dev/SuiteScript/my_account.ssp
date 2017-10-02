@@ -1,0 +1,173 @@
+<%/*
+    © 2015 NetSuite Inc.
+    User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+    provided, however, if you are an authorized user with a NetSuite account or log-in, you
+    may use this code subject to the terms that govern your access and use.
+*/%>
+
+<%
+
+    var SiteSettings
+    ,	siteType
+    ,	Environment
+    ,	Language
+    ,	Currency
+    ,	Error
+    ,	Application;
+
+    try
+    {
+        Application = require('Application');
+        SiteSettings = require('SiteSettings.Model').get();
+        siteType = SiteSettings.sitetype;
+
+        Environment = Application.getEnvironment(session, request);
+
+        Language = Environment.currentLanguage && Environment.currentLanguage.locale || '';
+        Currency = Environment.currencyCodeSpecifiedOnUrl;
+
+        // Access control, if you are not loged this will send you to the log in page
+        if (!session.isLoggedIn() || session.getCustomer().isGuest())
+        {
+            var parameters = request.getAllParameters();
+
+            delete parameters.sitepath;
+            parameters.origin = 'customercenter';
+
+            if (parameters.fragment)
+            {
+                parameters.origin_hash = parameters.fragment;
+                delete parameters.fragment;
+            }
+
+            return nlapiSetRedirectURL('EXTERNAL', SiteSettings.touchpoints.login, null, false, parameters);
+        }
+    } catch (e) {
+        Error = Application.processError(e);
+    }
+
+%>
+<!DOCTYPE html>
+<html <%= Language ? 'lang="' + Language.replace('_', '-') + '"' : '' %>>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="google-site-verification" content="WInaEGx7uh3YJoCSn4gHJ_32R3xCJ2ncMVp4yE-iYLQ" />
+        <title>My Account</title>
+        <link rel="shortcut icon" href="<%= session.getAbsoluteUrl("checkout", "img/favicon.ico") %>" />
+
+        <!--[if !IE]><!-->
+            <link rel="stylesheet" href="<%= session.getAbsoluteUrl('checkout', 'css/myaccount.css') %>?t={{timestamp}}">
+        <!--<![endif]-->
+
+        <!--[if lte IE 9]>
+        {{#each cssnumbers}}
+            <link rel="stylesheet" href="<%= session.getAbsoluteUrl('checkout', 'css_ie/myaccount_{{this}}.css?t={{../timestamp}}') %>">
+        {{/each}}
+            <link rel="stylesheet" href="<%= session.getAbsoluteUrl('checkout', 'css_ie/myaccount.css?t={{timestamp}}') %>">
+        <![endif]-->
+
+        <!--[if lt IE 9]>
+            <script src="<%= session.getAbsoluteUrl('checkout', 'javascript/html5shiv.min.js') %>"></script>
+              <script src="<%= session.getAbsoluteUrl('checkout', 'javascript/respond.min.js') %>"></script>
+        <![endif]-->
+
+        <%= (siteType && siteType === 'STANDARD') ? getPageFullHead() : '' %>
+        <script>
+            {{#js}}
+            var SC = window.SC = {
+                ENVIRONMENT: {
+                    jsEnvironment: (typeof nsglobal === 'undefined') ? 'browser' : 'server'
+                }
+            ,	isCrossOrigin: function()
+                {
+                    return '<%= Environment.currentHostString %>' !== document.location.hostname;
+                }
+            ,	isPageGenerator: function()
+                {
+                    return typeof nsglobal !== 'undefined';
+                }
+            ,	getSessionInfo: function(key)
+                {
+                    var session = SC.SESSION || SC.DEFAULT_SESSION || {};
+                    return (key) ? session[key] : session;
+                }
+            ,	getPublishedObject: function(key)
+                {
+                    return SC.ENVIRONMENT && SC.ENVIRONMENT.published && SC.ENVIRONMENT.published[key] ? SC.ENVIRONMENT.published[key] : null;
+                }
+            };
+            {{/js}}
+        </script>
+        <script src="<%= session.getAbsoluteUrl('checkout', 'myaccount.environment.ssp?lang=' + Language + '&cur=' + Currency) %>&t={{timestamp}}"></script>
+        <% if (Error) { %>
+        <script>SC.ENVIRONMENT.contextError = <%= JSON.stringify(Error) %>;</script>
+        <% } %>
+        <script src="<%= session.getAbsoluteUrl('checkout', 'javascript/myaccount.js') %>?t={{timestamp}}"></script>
+
+        <% if (SC.Configuration.useCMS) { %>
+            <script src="/cms/2/assets/js/postframe.js"></script>
+            <script src="/cms/2/cms.js"></script>
+        <% } %>
+
+        <script type="text/javascript">
+            var _elqQ = _elqQ || [];
+            _elqQ.push(['elqSetSiteId', '688258854']);
+            _elqQ.push(['elqTrackPageView']);
+        
+            (function () {
+                function async_load() {
+                    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                    s.src = '//img04.en25.com/i/elqCfg.min.js';
+                    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                }
+                if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);
+                else if (window.attachEvent) window.attachEvent('onload', async_load);
+            })();
+        </script>
+
+        <!--Start of Zendesk Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+        $.src="https://v2.zopim.com/?51oAa6W1w5sDAFH1VvHbq2yDGBdKPk9P";z.t=+new Date;$.
+        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!--End of Zendesk Chat Script-->
+    </head>
+    <body>
+
+    <% if (siteType && siteType === 'STANDARD'){ %>
+        <div id='div__header' style="overflow: hidden;" class='noprint' leftmargin='0' topmargin='0' marginwidth='1' >
+            <table border='0' cellspacing='0' cellpadding='0' width='100%'>
+                <%= getPageTop() %>
+            </table>
+        </div>
+    <% } %>
+
+        <noscript>
+            <div class="myaccount-layout-no-javascript-msg">
+                <strong>Javascript is disabled on your browser.</strong><br>
+                To view this site, you must enable JavaScript or upgrade to a JavaScript-capable browser.
+            </div>
+        </noscript>
+
+
+        <div id="main" class="main"></div>
+
+        <!--Start of Zendesk Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+        $.src="https://v2.zopim.com/?51oAa6W1w5sDAFH1VvHbq2yDGBdKPk9P";z.t=+new Date;$.
+        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!--End of Zendesk Chat Script-->
+
+    </body>
+</html>
+
+<%= (function(){ try{ return require('ReleaseMetadata').asHTMLComment(); } catch(ex){return '';}} )() %>

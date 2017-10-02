@@ -1,0 +1,46 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.site-search {
+	@extend .nav-search;
+}
+
+.site-search-content {
+	@extend .nav-search-content;
+}
+
+.site-search-content-form {
+	@extend .nav-search-content-form;
+}
+
+.site-search-content-input {
+	@extend .nav-search-content-input;
+}
+
+.site-search-input {
+	@extend .nav-search-input;
+}
+
+.site-search-input-icon {
+	@extend .nav-search-input-icon;
+}
+
+.site-search-input-reset {
+	@extend .nav-search-input-reset;
+}
+
+.site-search-button-submit {
+	@extend .nav-search-button-submit;
+}
+
+.site-search-button-close {
+	@extend .nav-search-button-close;
+}
+
+.site-search-input-reset-icon {
+	@extend .nav-search-input-reset-icon;
+}

@@ -1,0 +1,148 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+footer {
+    background: $sc-color-theme-background;
+    border-top: 1px solid $sc-color-theme-border;
+    color: $sc-color-tertiary;
+}
+.footer-content {
+    @extend .container;
+    @extend .row;
+    margin: auto;
+}
+.footer-content-nav {
+    overflow: hidden;
+    padding: $sc-base-padding * 5 0 0 0;
+}
+.footer-content-nav-list {
+    list-style: none;
+    margin: 0 0 10px;
+    width: 100%;
+
+    @media (min-width: $screen-sm-min) {
+        float: left;
+        margin: 0 1%;
+        width: 18%;
+    }
+}
+.footer-content-nav-list > li,
+.footer-connect > li {
+    display: none;
+    font-size: $sc-h5-font-size;
+    padding-top: $sc-base-padding * 3;
+    text-align: left;
+
+    @media (min-width: $screen-sm-min) {
+        display: list-item !important;
+        font-size: 14px;
+        height: auto !important;
+        visibility: visible !important;
+           padding-top: $sc-base-padding;
+    }
+}
+.footer-content-nav-list:first-child {
+    margin-left: 0;
+}
+.footer-content-nav-list-last {
+    margin-bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+        margin-right: 0;
+        width: 20%;
+    }
+}
+.footer-connect {
+    margin-right: 0;
+    float: left;
+    padding: $sc-base-padding * 6 0;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-base-padding * 5;
+    }
+
+}
+.footer-social {
+    overflow: hidden;
+}
+.footer-social-item {
+    display: block;
+    float: left;
+    margin-right: 12px;
+    text-align: -webkit-match-parent;
+}
+.footer-social-item a {
+    color: $sc-color-secondary;
+}
+
+.footer-content-nav .first {
+    color: $sc-color-theme-light;
+    display: list-item;
+    font-family: 'Work Sans', sans-serif;
+    font-size: $sc-h4-font-size;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+.footer-content-nav-list a {
+    color: $sc-color-theme-background-light;
+}
+.footer-newsletter-email-form-input {
+    @extend .input-large;
+    display: inline;
+}
+.footer-newsletter-email-form-submit {
+    @extend .button-large;
+    @extend .button-primary;
+   padding: $sc-base-padding * 2.2 $sc-base-padding * 3;
+}
+.footer-social-facebook-icon {
+    font-size: 20px;
+    color: white;
+    @extend .fa;
+    @extend %fa-facebook-square;
+}
+.footer-social-twitter-icon {
+    color: white;
+    font-size: 20px;
+    @extend .fa;
+    @extend %fa-twitter-square;
+}
+.footer-social-google-icon {
+    color: white;
+    font-size: 20px;
+    @extend .fa;
+    @extend %fa-google-plus-square;
+}
+.footer-social-pinterest-icon {
+    color: white;
+    font-size: 20px;
+    @extend .fa;
+    @extend %fa-pinterest-square;
+}
+.footer-content-copyright {
+    border-top: 1px solid $sc-color-theme;
+    clear: both;
+    color: $sc-color-theme-light;
+    font-size: $sc-smallest-font-size;
+    margin-top: $sc-base-margin * 3;
+    padding: $sc-base-padding * 3 0;
+    text-align:center;
+
+    @media (min-width: $screen-md-min) {
+        padding-bottom: $sc-base-padding * 5;
+        padding-top: $sc-base-padding * 5;
+        text-align: center;
+    }
+}
+.footer-content-copyright ul li {
+    border-right: 1px solid $sc-color-theme-light;
+    display: inline-block;
+    padding: 0 $sc-base-padding * 1;
+}
+.footer-content-copyright ul li a {
+    color: $sc-color-theme-light;
+}

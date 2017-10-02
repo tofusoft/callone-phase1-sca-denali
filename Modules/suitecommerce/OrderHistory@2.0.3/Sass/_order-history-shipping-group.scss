@@ -1,0 +1,48 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-history-shipping-group-shipping-address-subtitle{
+	@extend .text-light;
+	margin:$sc-base-margin * 4 0;
+	display:block;
+	color:$sc-color-secondary;
+	font-weight:$sc-font-weight-semibold;
+}
+
+.order-history-shipping-group-accordion-head{
+	@extend .accordion-head;
+}
+
+
+.order-history-shipping-group-accordion-head{
+	@extend .accordion-head;
+}
+
+.order-history-shipping-group-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+
+.order-history-shipping-group-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+
+.order-history-shipping-group-accordion-body{
+	@extend .accordion-body;
+}
+
+.order-history-shipping-group-accordion-container{
+	@extend .accordion-container;
+}
+
+.order-history-shipping-group-information-details{
+	background:$sc-color-theme-background-light;
+	margin-bottom:$sc-medium-margin;
+	padding:$sc-base-padding * 4;
+}
+.order-history-shipping-group-information-info{
+	margin-bottom:$sc-small-margin;
+}

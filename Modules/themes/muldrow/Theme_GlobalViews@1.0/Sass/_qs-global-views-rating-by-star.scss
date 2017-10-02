@@ -1,0 +1,15 @@
+.global-views-rating-by-star-percentage-area-progress-bar {
+    @extend .progress;
+    border-radius:0px;
+    background-color:$sc-color-theme-light;
+    margin-bottom: 0;
+
+    @media (min-width: $screen-sm-min){
+    margin-bottom: $sc-base-margin * 4;
+    }   
+}
+
+.global-views-rating-by-star-percentage-area-progress-bar-filled {
+    @extend .progress-bar;
+    background-color: $sc-color-secondary
+}

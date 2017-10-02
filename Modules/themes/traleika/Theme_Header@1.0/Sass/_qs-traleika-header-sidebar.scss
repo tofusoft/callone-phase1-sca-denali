@@ -1,0 +1,89 @@
+///////////////////////////////////////////////////////////////
+//header sidebar menu look and feel
+
+.header-sidebar-menu-wrapper {
+	border-top: 1px solid $sc-color-theme-border;
+	border-bottom: 1px solid $sc-color-theme-border;
+}
+
+.header-sidebar-menu-wrapper li {
+	background-color: $sc-color-theme-background;
+
+		@media (min-width:$screen-md-min) {
+		background-color: $sc-color-theme-background-light;
+	}
+}
+
+.header-sidebar-menu-wrapper a {
+	padding: $sc-base-padding * 3;
+	color: $sc-color-tertiary;
+	border-bottom: 1px solid $sc-color-theme-border;
+	@extend .small-title-navigable;
+	font-weight: $sc-font-weight-normal;
+}
+
+.header-sidebar-menu-wrapper li:last-child > a {
+	border-bottom: 0;
+}
+
+.header-sidebar-menu-wrapper .header-sidebar-menu-back {
+	padding: $sc-base-padding * 3;
+	margin:0;
+	background: $sc-color-theme-background;
+	color: $sc-color-link;
+	text-transform: capitalize;
+}
+
+.header-sidebar-menu-push-icon {
+	@extend .icon-angle-right;
+	font-size: $sc-navigation-icon-size;
+	float: right;
+}
+
+.header-sidebar-menu-pop-icon {
+	@extend .icon-angle-left;
+	font-size: $sc-h3-font-size;
+	margin-right: $sc-base-margin * 2;
+	color: $sc-color-link;
+}
+
+.header-sidebar-wrapper .header-profile-menu-login,
+.header-sidebar-user-logout {
+	height: $sc-main-nav-height;
+	line-height: $sc-main-nav-height;
+	padding: 0 $sc-base-padding * 3;
+	display: block;
+	@media (min-width:$screen-md-min) {
+		line-height: $sc-target-size;
+	}
+}
+
+.header-sidebar-user-logout-icon{
+	@extend .fa;
+	@extend %fa-sign-out;
+}
+
+.header-sidebar-wrapper .header-profile-welcome-link{
+	line-height: 1.1em;
+	height: initial;
+	text-align: left;
+	padding: $sc-base-padding * 3;
+	cursor:default;
+	color: $sc-color-secondary;
+}
+
+.header-sidebar-menu-lastoption > a{
+	border-bottom: none;
+}
+
+.header-sidebar-wrapper .header-sidebar-menu-separator{
+	background-color: #e4eff5;
+	height: $sc-base-margin *2;
+	border-top: 1px solid $sc-color-theme-border;
+	border-bottom: 1px solid $sc-color-theme-border;
+}
+.header-sidebar-menu-link.active {
+	color: $sc-color-copy;
+}
+
+.header-sidebar-menu-myaccount{}

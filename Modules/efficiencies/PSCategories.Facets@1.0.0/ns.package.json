@@ -1,0 +1,24 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "templates": [
+            "Templates/**/*.tpl"
+        ],
+        "sass": [
+            "Sass/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Facets@2.0.8/JavaScript/Facets.BrowseCategories.View.js":"JavaScript/Facets.BrowseCategories.View.Override.js",
+        "suitecommerce/Facets@2.0.8/JavaScript/Facets.CategoryCell.View.js":"JavaScript/Facets.CategoryCell.View.Override.js",
+
+        "suitecommerce/Facets@2.0.8/Templates/facets_category_browse.tpl":"Templates/Overrides/facets_category_browse.tpl",
+        "suitecommerce/Facets@2.0.8/Templates/facets_category_cell.tpl":"Templates/Overrides/facets_category_cell.tpl",
+
+        "suitecommerce/Facets@2.0.8/Templates/facets_facet_browse.tpl":"Templates/Overrides/facets_facet_browse.tpl",
+        "suitecommerce/Facets@2.0.8/Templates/facets_faceted_navigation.tpl":"Templates/Overrides/facets_faceted_navigation.tpl"
+
+    }
+}

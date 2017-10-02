@@ -1,0 +1,38 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+$ink-1: #258FCE;
+$ink-2: #2553A2;
+$ink-3: #fe4819;
+
+
+
+.site-search {
+	background-color: $sc-color-theme-background-light
+}
+.site-search-input-icon {
+	height: 20px;
+	color: $ink-1;
+}
+.site-search-content{
+  border: none;
+  width: 450px;
+}
+.site-search-button-submit{
+  background: $ink-3;
+  border-radius: 0 10px 10px 0;
+  &:hover , &:active, &:focus{
+	background: lighten($ink-3,10%);
+    outline: none;
+  }
+}
+.site-search-input-reset{
+  right: 70px;
+}
+.site-search-input{
+  border-radius: 10px;
+  width: 100%;
+}

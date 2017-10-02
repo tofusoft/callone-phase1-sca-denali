@@ -1,0 +1,14 @@
+.item-views-related-item-title{
+    @extend .small-title-navigable;
+    text-align:center;
+    font-weight:normal;
+    text-transform:capitalize;
+    margin-bottom:$sc-small-margin;
+    display:block;
+    position:relative;
+    min-height: 50px;
+}
+
+.item-views-price{
+    min-height: 64px;
+}

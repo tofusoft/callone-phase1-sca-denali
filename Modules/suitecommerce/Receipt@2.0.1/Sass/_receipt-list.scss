@@ -1,0 +1,73 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.receipt-list-header {
+	border-top: 1px solid $sc-color-theme-border;	
+	padding: $sc-base-padding * 3 0;	
+}
+.receipt-list-content-table {
+	@extend .recordviews-row-header;
+}
+
+.receipt-list-content-table-header-row {
+	@extend .recordviews-table;
+}
+
+.receipt-list-content-table-header-row-title {
+	@extend .recordviews-header;
+	width: 25%;
+}
+.receipt-list-content-table-header-row-date {
+	@extend .recordviews-date-header;
+	width: 25%;
+}
+.receipt-list-content-table-header-row-currency {
+	@extend .recordviews-currency-header;
+	width: 25%;
+}
+.receipt-list-content-table-header-row-status {
+	@extend .recordviews-status-header;
+	width: 25%;
+}
+
+
+.receipt-list-records-container {
+	@media (min-width: $screen-md-min) {
+
+		.recordviews-title-header,
+		.recordviews-title {
+			width: 25%;
+		}
+		.recordviews-date-header,
+		.recordviews-date {
+			width: 25%;
+		}
+		.recordviews-currency-header,
+		.recordviews-currency {
+			width: 25%;
+		}
+		.recordviews-status-header,
+		.recordviews-status {
+			width: 25%;
+		}
+	}
+}
+
+.receipt-list-button-back {
+	@extend .button-back;
+}
+
+.receipt-list-button-back-icon {
+	@extend .button-back-icon;	
+}
+.receipt-list-empty {
+	@extend .list-empty;
+}
+
+.receipt-list-receipts-list-table {
+	@extend .table-flex-record-navigable;
+}

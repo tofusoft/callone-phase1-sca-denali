@@ -1,0 +1,21 @@
+{
+    "gulp": {
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_typography.scss": "Sass/atoms/_qs-traleika-typography.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_messages.scss": "Sass/atoms/_qs-traleika-messages.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_purchase-controls.scss": "Sass/atoms/_qs-traleika-purchase-controls.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_pusher.scss": "Sass/atoms/_qs-pusher.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_colors.scss": "Sass/variables/_qs-traleika-colors.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_sizing.scss": "Sass/variables/_qs-traleika-sizing.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_typography.scss": "Sass/variables/_qs-traleika-typography.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_breadcrumb.scss": "Sass/molecules/_qs-traleika-breadcrumb.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_list-header.scss": "Sass/molecules/_qs-traleika-list-header.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_summary_box.scss": "Sass/molecules/_qs-summary-box.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_pagination.scss": "Sass/molecules/_qs-traleika-pagination.scss"
+
+    }
+}

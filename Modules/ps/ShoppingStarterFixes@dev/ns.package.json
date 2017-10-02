@@ -1,0 +1,10 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/ShoppingApplication@2.0.8/JavaScript/SC.Shopping.Starter.js": "JavaScript/SC.Shopping.Starter.js"
+    }
+}

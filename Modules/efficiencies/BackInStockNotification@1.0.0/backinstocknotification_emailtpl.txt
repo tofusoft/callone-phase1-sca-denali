@@ -1,0 +1,58 @@
+<%
+/*
+This is an underscore template, used by the back in stock notification to generate emails
+You can use all the logic you use on your well known frontend templates.
+To translate texts, use translate('string $(0)',value); Notice it's not an underscore function like in frontend.
+Translations should be included in your translations file uploaded and associated to the configuration record for the email for that particular website
+To get item (meaning the item that is is back in stock) information, use itemAttributes('property')
+This already has the context of the item, and will use BackInStockNotification.ItemKeyMapping to get the info of the item.
+This does translations, generation of correct url's, grabing the correct price in the correct currency, behind the curtains.
+It has "item information, for the context of this site"
+
+For simplicity, the title of the email is taken from here, from the title tag. Please do valid html!
+This template goes also in the config record for the website+back in stock entry.
+
+Other data available:
+backinstocknotification object. properties available can be seen in BackInStockNotification.js columns
+Website object. Properties can be seen in BackInStockNotification.Website.js
+*/
+
+%>
+<html>
+    <head>
+        <title><%= translate( "Item $(0) is back in stock at $(1). Hurry up!", itemAttributes('name'), website.displayname )%></title>
+    </head>
+    <body>
+    	<table>
+    		<tr>
+    			<td>
+    			<h1>Back in Stock</h1>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				<p><%= translate("Hello $(0) $(1)", backinstocknotification.firstname, backinstocknotification.lastname ) %></p>
+    				<p><%= translate("You requested to be notified when a product was back in stock.") %></p>
+    				<p><%= translate("The following product is back in stock and is available for purcahse at $(0) (while supplies last):", website.displayname)%></p>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td>
+    				<table>
+    					<% if (itemAttributes('imageurl')){ %>
+    					<tr>
+    						<td><%= translate("<img src=\"$(0)\" alt=\"$(1)\"/>",itemAttributes('imageurl'), itemAttributes('imagealt')) %></td>
+    					</tr>
+    					<% }%>
+    					<tr>
+    						<td>
+    							<p><%= translate("<a href=\"$(0)\">$(1)</a>",itemAttributes('urlcomponent'), itemAttributes('name')) %><p>
+    							<p style="font-size: 15px"><%= translate("$(0)",itemAttributes('price_formatted')) %></p>
+    						</td>
+    					</tr>
+    				</table>
+    			</td>
+    		</tr>
+    	</table>
+    </body>
+</html>

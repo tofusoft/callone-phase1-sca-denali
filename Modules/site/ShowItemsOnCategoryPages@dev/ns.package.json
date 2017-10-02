@@ -1,0 +1,15 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "templates": [
+            "Templates/*"
+        ]
+    },
+    "overrides": {
+        "efficiencies/PSCategories.Facets@1.0.0/Templates/facets_faceted_navigation_item_category.tpl": "Templates/facets_faceted_navigation_item_category.tpl",
+        "suitecommerce/Facets@2.0.8/Templates/facets_faceted_navigation_item.tpl": "Templates/facets_faceted_navigation_item.tpl",
+        "efficiencies/PSCategories.Facets@1.0.0/JavaScript/Facets.FacetedNavigationItemCategory.View.js": "JavaScript/Facets.FacetedNavigationItemCategory.View.js"
+    }
+}

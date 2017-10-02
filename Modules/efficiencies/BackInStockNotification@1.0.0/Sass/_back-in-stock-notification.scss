@@ -1,0 +1,45 @@
+.back-in-stock-notification-placeholder {
+    position: relative;
+}
+.back-in-stock-notification-show-form-button {
+    @extend .button-secondary;
+    @extend .button-medium;
+}
+.back-in-stock-notification-form-wrapper {
+    padding: $sc-base-padding * 3;
+}
+.back-in-stock-notification-message {
+    margin-bottom: $sc-base-margin * 3;
+}
+.back-in-stock-notification-message-success,
+.back-in-stock-notification-message-error {
+    display: none;
+    padding: $sc-base-padding * 3;
+}
+.back-in-stock-notification-message-success {
+    background: $sc-color-success-background;
+    color: $sc-color-success;
+}
+.back-in-stock-notification-message-error {
+    background: $sc-color-error-background;
+    color: $sc-color-error;
+}
+.back-in-stock-notification-control-wrapper {
+    margin-bottom: $sc-base-margin * 3;
+}
+.back-in-stock-notification-label {
+    display: block;
+    margin-bottom: $sc-base-margin;
+
+    small {
+        color: $sc-color-error;
+    }
+}
+.back-in-stock-notification-input {
+    @extend .input-generic;
+    margin-bottom: $sc-base-margin * 2;
+}
+.back-in-stock-notification-submit-button {
+    @extend .button-secondary;
+    @extend .button-small;
+}

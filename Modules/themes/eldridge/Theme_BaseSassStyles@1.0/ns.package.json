@@ -1,0 +1,18 @@
+{
+    "gulp": {
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_typography.scss": "Sass/atoms/_qs-eldridge-typography.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_messages.scss": "Sass/atoms/_qs-eldridge-messages.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/atoms/_purchase-controls.scss": "Sass/atoms/_qs-eldridge-purchase-controls.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_breadcrumb.scss": "Sass/molecules/_qs-eldridge-breadcrumb.scss",
+          "suitecommerce/BaseSassStyles@1.0.2/Sass/molecules/_summary_box.scss": "Sass/molecules/_qs-summary_box.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_colors.scss": "Sass/variables/_qs-eldridge-colors.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_sizing.scss": "Sass/variables/_qs-eldridge-sizing.scss",
+        "suitecommerce/BaseSassStyles@1.0.2/Sass/variables/_typography.scss": "Sass/variables/_qs-eldridge-typography.scss"
+
+    }
+}

@@ -1,0 +1,62 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+$sc-secondary-menu-height: 42px;
+
+
+.header-menu-search-icon{
+	@extend .fa;
+	@extend %fa-search;
+	color: $sc-color-primary
+}
+
+.header-menu-searchmobile-icon {
+	@extend .fa;
+	@extend %fa-search;
+	color: white;
+}
+
+.header-sidebar-toggle {
+	@extend .icon-button-primary;
+	width: $sc-target-size;
+	height: $sc-target-size;
+	text-align:center;
+}
+
+///////////////////////////////////////////////////////////////
+//secondary nav styles
+
+.header-secondary-wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: - $sc-sidebar-size;
+	width: $sc-sidebar-size;
+	background-color: $sc-color-theme-background;
+	// z-index: 1000;
+
+	@media (min-width: $screen-md-min) {
+		position: relative;
+		background-color: $sc-color-theme-background;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		width: auto;
+		height: $sc-secondary-menu-height;
+		border-top: 1px solid $sc-color-theme-border;
+		border-bottom: 1px solid $sc-color-theme-border;
+	}
+}
+
+
+///////////////////////////////////////////////////////////////
+//header settings
+
+.header-menu-settings-dropdown {
+/*	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);*/
+}

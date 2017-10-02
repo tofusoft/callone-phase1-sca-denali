@@ -1,0 +1,137 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$sc-secondary-menu-height: 40px;
+
+///////////////////////////////////////////////////////////////
+// header logo
+
+.header-logo-wrapper {
+	max-width: 299px;
+	width: 60%;
+}
+
+///////////////////////////////////////////////////////////////
+// main nav positioning
+
+.header-right-menu {
+	float: right;
+	margin-top: 0;
+	margin-bottom: ($sc-main-nav-height - $sc-main-nav-link-height) / 2;
+}
+.header-menu-searchmobile-icon {
+	color: $sc-color-primary;
+}
+.header-menu-search-icon,
+.header-menu-searchmobile-icon {
+	color: $sc-color-primary
+}
+
+///////////////////////////////////////////////////////////////
+// secondary nav styles
+
+.header-secondary-wrapper {
+
+	background-color: $sc-color-theme-background-light;
+	
+	@media (min-width: $screen-md-min) {
+		background-color: $sc-color-theme-background;
+		height: $sc-secondary-menu-height;
+		line-height: $sc-secondary-menu-height;
+	}
+}
+
+///////////////////////////////////////////////////////////////
+//main nav styles
+
+.header-menu-cart-link {
+	overflow: hidden;
+	color: $sc-color-theme-background;
+	background-color: $sc-color-theme-background-lightest;
+}
+
+
+.header-menu-cart-link-enabled{
+	&.header-menu-cart-link {
+		background-color: white;
+		color: $sc-color-theme;
+	}
+	.header-menu-cart-icon {
+		color: $sc-color-theme;
+		background-color: white;
+		@media(min-width: $screen-md-min) {
+		color: $sc-color-theme;
+	    background-color: white
+		}	
+	}
+}
+
+.header-menu-cart-link-enabled{
+	&.header-menu-cart-link:hover {
+		background-color: white;
+	}
+}
+
+.header-menu-cart-legend {
+	background-color: $sc-color-theme-background-lightest;
+	padding: 0;
+	float:right;
+	display: none;
+
+	@media(min-width: $screen-md-min) {
+		display: inline;
+	}
+}
+
+.header-menu-cart-icon {
+	@extend .fa;
+	@extend %fa-shopping-cart;
+	font-size: $sc-h3-font-size;
+	line-height: $sc-target-size;
+	min-width: $sc-target-size;
+	background-color: $sc-color-secondary;
+	color: white;
+	
+
+	@media(min-width: $screen-md-min) {
+		display: inline;
+		color: $sc-color-theme-background;
+		background-color: transparent;
+		margin-right: 5px
+	}
+}
+
+%header-link {
+	display: block;
+	min-width: $sc-target-size;
+	height: $sc-target-size;
+	line-height: $sc-target-size;
+	color: $sc-color-theme;
+	text-align: center;
+	position: relative;
+	background-color: transparent;
+}
+
+.header-menu-settings-link,
+.header-menu-cart-link,
+.header-menu-searchmobile-link {
+	@extend %header-link;
+}
+
+.header-menu-settings-link {
+	padding: 0 $sc-base-padding * 2;
+	margin-right: $sc-base-margin * 4;
+}
+
+.header-menu-cart-dropdown {
+	margin-top: 12px;
+    margin-bottom: 12px;
+
+    @media(min-width: $screen-md-min) {
+		margin: 0 5px 0 0;
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "overrides": {
+    "suitecommerce/ShoppingApplication@2.0.8/SuiteScript/shopping.user.environment.ssp": "SuiteScript/shopping.user.environment.ssp",
+    "suitecommerce/CheckoutApplication@2.0.6/SuiteScript/checkout.environment.ssp": "SuiteScript/checkout.environment.ssp",
+    "suitecommerce/MyAccountApplication@2.0.5/SuiteScript/myaccount.environment.ssp": "SuiteScript/myaccount.environment.ssp"
+  }
+}

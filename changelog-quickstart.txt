@@ -1,0 +1,9 @@
+1.1.0
+Added CreateQuickStart.sh to the repository
+Updated Denali Dependencies to those on R2
+Added EnvironmentFiles module (missing by error on previous version), updated to 1.1 (to support Denali R2)
+Added ItemDetails@2.0.6-Issue360029 module, with fix for multiple tabs on SEO Engine (refer to issue 360029 for more info)
+Updated Traleika and Eldridge to ShoppingApplication 1.1, that avoids template overriding of the Shopping layout
+
+1.0.0
+Initial release for Denali Release 1

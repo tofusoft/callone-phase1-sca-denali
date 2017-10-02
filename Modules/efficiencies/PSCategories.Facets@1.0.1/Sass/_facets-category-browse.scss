@@ -1,0 +1,115 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+
+
+.facets-category-browse {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: $sc-base-padding * 3;
+	padding-right: $sc-base-padding * 3;
+}
+.facets-category-browse-facets {
+	@extend .facets-facet-browse-facets;
+	webkit-box-shadow: none !important;
+   	moz-box-shadow: none !important;
+   	box-shadow: none !important;
+}
+
+.facets-category-browse-navigation {}
+
+.facets-category-browse-header h1 { }
+
+.facets-category-browse-banner-left-top {}
+
+.facets-category-browse-title {}
+
+.facets-category-browse-facets-list-wrapper {
+		display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: inherit;
+		}
+	
+}
+.facets-category-browse-results {
+	@extend .facets-facet-browse-results
+}
+
+.category-main-image {
+	float: left;
+	width: 30%;
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		display: inherit;
+	}
+	
+}
+.category-main-description {
+	float: left;
+	width: auto;
+	margin: $sc-base-margin * 2;
+
+	@media (min-width: $screen-md-min) {
+		width: 60%;
+		margin-left: $sc-base-margin * 4;
+	}
+}
+.category-main-description h3 {
+	text-transform: none;
+	font-weight: normal;
+}
+.category-list-header {
+	display: table;
+	padding-bottom: $sc-base-padding * 3;
+	/*margin-bottom: $sc-base-margin * 4;
+	@media (min-width: $screen-md-min) {
+		width: 75%;
+		float: right;
+	}*/
+}
+
+.category-list-container {
+	border-top: $sc-color-theme-border 1px solid;
+	margin-top: $sc-base-margin * 3;
+/*	@media (min-width: $screen-md-min) {
+		width: 75%;
+		float: right;
+	}*/
+}
+
+
+.category-list-collection-view-row {
+	margin-top: $sc-base-margin * 2;
+	display: table;
+
+}
+
+
+
+/*
+@media (min-width: 992px) {
+	.facets-category-browse {
+	width: 970px
+}
+}
+@media (min-width: 768px) {
+	.facets-category-browse {
+	width: 750px;
+	}
+
+
+}
+@media (min-width: 1200px) {
+	.facets-category-browse {
+	width: 1170px;
+}
+.facets-category-cell {
+	width: 25%
+}
+}*/

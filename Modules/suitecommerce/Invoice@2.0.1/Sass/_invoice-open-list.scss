@@ -1,0 +1,84 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.invoice-open-list-button-back {
+	@extend .button-back;
+}
+
+.invoice-open-list-button-back-icon {
+	@extend .button-back-icon;
+}
+
+.invoice-open-list-header{
+	margin-bottom: $sc-small-margin;
+}
+
+.invoice-open-list-header-nav{
+	margin-bottom: $sc-medium-margin;
+	position:relative;
+}
+
+.invoice-open-list-header-button-open{
+	@extend .button-medium;
+	@extend .button-pill-active;
+}
+
+.invoice-open-list-header-button-paid{
+	@extend .button-medium;
+	@extend .button-pill;
+}
+
+.invoice-open-list-button-payment{
+	@extend .button-medium;
+	@extend .button-primary;
+	width:auto;
+	position:absolute;
+	top:62px;
+	right:0;
+	z-index: 99;
+
+	@media (min-width: $screen-sm-min){
+		top:0;
+	}
+}
+
+.invoice-open-list-button-payment[disabled]{
+	@extend .button-primary-disabled;
+}
+
+.invoice-open-list-records{
+	@extend .table-flex-record-selectable-navigable;
+}
+
+.invoice-open-list-records-head tr{
+	display: none;
+	@media (min-width: $screen-md-min){
+		display: table-row;
+	}
+}
+
+.invoice-open-list-records-head th{
+	text-align: right;
+	padding-bottom: $sc-base-padding * 2;
+	font-weight: normal;
+	border-bottom: 1px solid $sc-color-theme-border;
+}
+
+.invoice-open-list-records-body td{
+	vertical-align: middle;
+	
+	@media (min-width: $screen-md-min){
+		height: 60px;	
+	}
+}
+
+.invoice-open-list-title{}
+.invoice-open-list-header-button-group{}
+.invoice-open-list-body{}
+.invoice-open-list-records-head-row{}
+.invoice-open-list-no-records{}
+.invoice-open-list-anchor-paid{}

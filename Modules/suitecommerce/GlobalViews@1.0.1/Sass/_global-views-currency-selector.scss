@@ -1,0 +1,40 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.global-views-currency-selector{
+	display:block;
+	clear:both;
+	margin:$sc-base-margin * 3;
+	@media(min-width: $screen-md-min){
+		margin:0px;
+	}
+}
+
+.global-views-currency-selector-addon{
+	width:40px;
+	background:$sc-color-theme-background;
+	color:$sc-color-theme;
+	font-size:$sc-h2-font-size;
+	border:1px solid $sc-color-theme-border;
+	border-right:none;
+	float:left;
+	line-height:$sc-target-size;
+	height:$sc-target-size;
+	text-align:center;
+}
+
+.global-views-currency-selector-select{
+	@extend .input-base;
+	width:175px;
+	height:$sc-target-size;
+	border:1px solid $sc-color-theme-border;
+	border-left:none;
+	float:right;
+	@media(min-width: $screen-md-min){
+		width:233px;
+	}
+}

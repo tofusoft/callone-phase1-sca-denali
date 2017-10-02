@@ -1,0 +1,67 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.creditcard-edit-form-required {
+    @extend .input-required
+}
+
+.creditcard-edit-form-controls p {
+    float: left;
+    clear: both;
+}
+//Modal CreditCardDetailsView
+.global-views-modal-content .global-views-modal-content-body {
+
+    .creditcard-edit-form-controls-img-container {
+        margin-top: 0;
+    }
+}
+
+.creditcard-edit-form-controls-img-container {
+    margin-top: $sc-base-margin * 3;
+    margin-bottom: $sc-base-margin * 2
+}
+
+.creditcard-edit-form-card-icon {
+    border:0px solid $sc-color-theme-border;
+}
+
+.creditcard-edit-form-label {
+    @extend .input-label
+}
+
+.creditcard-edit-form-label-required {
+    @extend .input-required
+}
+
+.creditcard-edit-form-input {
+    @extend .input-large
+}
+
+.creditcard-edit-form-select {
+    @extend .input-small;
+    display: inline-block;
+    margin-right: $sc-base-margin * 2;
+}
+
+.creditcard-edit-form-button-submit {
+    @extend .address-edit-form-button-submit;
+}
+
+.creditcard-edit-form-button-cancel {
+    @extend .address-edit-form-button-cancel;
+}
+
+.creditcard-edit-form-button-reset {
+    @extend .address-edit-form-button-reset;
+}
+
+.creditcard-edit-form-checkbox {
+    @extend .checkbox;
+    margin-bottom: $sc-base-margin * 3;
+    display: inline-block;
+}

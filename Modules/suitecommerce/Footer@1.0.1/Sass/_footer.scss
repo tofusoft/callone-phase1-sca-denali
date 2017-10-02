@@ -1,0 +1,55 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+footer {
+    background: $sc-color-theme-background-light;
+    border-top: 1px solid $sc-color-theme-border;
+}
+.footer-content{
+    @extend .container;
+    @extend .row;
+    margin: auto;
+}
+.footer-content-nav {
+    @extend .col-md-8;
+    @extend .col-xs-12;
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-content-nav-list {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: $sc-base-padding * 6 0 0;
+
+    @media (min-width: $screen-sm-min) {
+        padding-top: $sc-base-padding * 5;
+    }
+
+    @media (min-width: $screen-md-min) {
+        text-align: left;
+    }
+}
+.footer-content-nav-list > li {
+    display: inline-block;
+    margin-right: $sc-base-margin * 2;    font-weight: 300;
+}
+.footer-content-copyright {
+    @extend .col-md-4;
+    @extend .col-xs-12;
+    text-align:center;
+    font-size: $sc-base-font-size;
+    color: $sc-color-theme-light;
+    padding: $sc-base-padding * 3 0;
+
+    @media (min-width: $screen-md-min) {
+        text-align: right;
+        padding-top: $sc-base-padding * 5;
+        padding-bottom: $sc-base-padding * 5;
+        float: right;
+    }
+}

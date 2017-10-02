@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "templates": [
+            "Templates/*"
+        ],
+        "images": [
+            "Images/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Footer@1.0.1/Templates/footer.tpl": "Templates/qs_footer.tpl"
+    }
+}

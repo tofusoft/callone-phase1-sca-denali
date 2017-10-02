@@ -1,0 +1,142 @@
+<%/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/%>
+
+<%
+var	Environment
+,	SiteSettings
+,	LiveOrder
+,	Profile
+,	siteId
+,	Content
+,	Merchandising
+,	Error
+,	Application;
+
+try {
+	Application = require('Application');
+	Environment = Application.getEnvironment(session, request);
+	SiteSettings = require('SiteSettings.Model').get();
+	LiveOrder = require('LiveOrder.Model').get();
+	Profile = require('Profile.Model').get();
+	siteId = SiteSettings.siteid;
+
+	// Content depends on the instalation and inclusion of the
+	// ContentDeliverService provided as a separated boundle
+	try {
+		Content = require('Content.Model').listURL(siteId);
+	} catch (e) {
+		console.warn('Content Module not present in ShopFlow SSP');
+	}
+
+	if (typeof psg_dm !== 'undefined') {
+		Merchandising = psg_dm.getMerchRule();
+	} else {
+		console.warn('Merchandising Module not present in ShopFlow SSP');
+	}
+
+} catch (e) {
+	Error = Application.processError(e);
+}
+
+response.setContentType('JAVASCRIPT');
+%>
+var SC = window.SC = { ENVIRONMENT: {} };
+
+<% if (Environment) { %>
+	// Server Environment Info
+	SC.ENVIRONMENT = <%= JSON.stringify(Environment) %>;
+<% } %>
+
+<% if (Content) { %>
+	// The Content
+	SC.ENVIRONMENT.CONTENT = <%= JSON.stringify(Content) %>;
+<% } %>
+
+<% if (SiteSettings) { %>
+	// Site Settings Info
+	SC.ENVIRONMENT.siteSettings = <%= JSON.stringify(SiteSettings) %>;
+<% } %>
+
+// Local Environment info
+SC.ENVIRONMENT.jsEnvironment = typeof nsglobal === 'undefined' ? 'browser' : 'server';
+
+// Do we have SEO Support
+SC.ENVIRONMENT.seoSupport = false;
+
+if (SC.ENVIRONMENT.jsEnvironment === 'server')
+{
+	loadScript({
+		code: 'SC.ENVIRONMENT.seoSupport = true'
+	,	seo_remove: false
+	});
+}
+
+// Information that is related to the user should only by available in the Browser
+if (SC.ENVIRONMENT.jsEnvironment === 'browser')
+{
+	<% if (LiveOrder) { %>
+		// The Cart
+		SC.ENVIRONMENT.CART = <%= JSON.stringify(LiveOrder) %>;
+	<% } %>
+
+	<% if (Profile) { %>
+		// The Profile
+		SC.ENVIRONMENT.PROFILE = <%= JSON.stringify(Profile)%>;
+	<% } %>
+}
+else
+{
+	SC.ENVIRONMENT.CART = {};
+	SC.ENVIRONMENT.PROFILE = {};
+}
+
+ <% if (Content) { %>
+	// The Content
+	SC.ENVIRONMENT.CONTENT = <%= JSON.stringify(Content) %>;
+<% } %>
+
+<% if (Merchandising) { %>
+	// Merchandising
+	SC.ENVIRONMENT.MERCHANDISING = <%= JSON.stringify(Merchandising, {}) %>;
+<% } %>
+
+// Touch Support
+// Checks if this is a touch enalbed device
+SC.ENVIRONMENT.isTouchEnabled = 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch;
+// Sets the class property of the html element
+// It is not checking if it was already set (be aware if the SEO engine)
+document.documentElement.className = SC.ENVIRONMENT.isTouchEnabled ? 'touch' : 'no-touch';
+
+// Include Language Files
+loadScript({
+	url: '<%= session.getAbsoluteUrl("shopping", "languages/en.js") %>'
+,	seo_remove: true
+});
+
+<% if (Environment && Environment.currentLanguage && Environment.currentLanguage.locale !== 'en') { %>
+	loadScript({
+		url: '<%= session.getAbsoluteUrl("shopping", "languages/" + Environment.currentLanguage.locale + ".js") %>'
+	,	seo_remove: true
+	});
+<% } %>
+
+<% if (Error) { %>
+
+	SC.ENVIRONMENT.contextError = <%= JSON.stringify(Error) %>;
+
+	if(!SC.ENVIRONMENT.baseUrl)
+	{
+		SC.ENVIRONMENT.baseUrl = '<%=  session.getAbsoluteUrl(request.getURL().indexOf('https:') === 0 ? 'checkout' : 'shopping', '/{{file}}') %>';
+	}
+<% } %>
+
+SC.ENVIRONMENT.published = {};
+<% _.each(SC.Configuration.publish,function(i){
+	var res = require(i.model)[i.call]();
+%>
+	SC.ENVIRONMENT.published.<%= i.key %> = <%= JSON.stringify(res) %>;
+<% });%>

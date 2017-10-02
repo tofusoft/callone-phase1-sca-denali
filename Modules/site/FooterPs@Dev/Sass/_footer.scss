@@ -1,0 +1,277 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+$ink-1: #258FCE;
+$ink-2: #2553A2;
+$ink-3: #fe4819;
+$ink-4: #EDEDED;
+/*-------------------------------*/
+
+footer {
+  background: $ink-4;
+  .footer-signUp-bar {
+    display: inline-block;
+    width: 100%;
+    background: $ink-2;
+    text-align: center;
+    ul {
+      float: none;
+      display: inline-block !important;
+      width: 1140px;
+      padding: 16px 15px;
+      height: 65px;
+      li {
+        display: inline-block !important;
+        padding-top: 0;
+        &.footer-signup-form {
+          margin-left: 30px;
+        }
+        &.first span {
+          color: lighten($ink-3, 10%);
+          font-weight: bold;
+        }
+        form {
+          position: relative;
+          input {
+            border-radius: 10px 0 0 10px;
+            border: none;
+            height: 34px;
+            &:focus{
+              outline: none;
+            }
+          }
+          button {
+            border-radius: 0 10px 10px 0;
+            padding: 10px 15px;
+            border: none !important;
+            &:hover, &:active, &:focus {
+              outline: none;
+            }
+          }
+          .message.message-success{
+            position: absolute;
+            top: 0;
+            left: 10px;
+            background: white;
+          }
+        }
+      }
+    }
+  }
+  .message.message-error{
+    position: absolute;
+    top: 0;
+    right: 100px;
+    height: 34px;
+  }
+  .footer-content-nav {
+    .footer-content-nav-list:last-child {
+      margin-right: 0;
+    }
+    ul {
+
+      width: 23.5%;
+      font-family: 'Ubuntu', sans-serif;
+      li.first, li.first a {
+        color: $ink-2;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        text-transform:capitalize;
+        margin-bottom: 6px;
+      }
+      li, li a {
+        color: $ink-2;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      li:not(.first) a:hover {
+        text-decoration: underline;
+        color: #FE4819;
+      }
+    }
+  }
+  .footer-content-copyright {
+    border-top: 1px solid darken($ink-4, 15px);
+    padding-top: 15px;
+    height: auto;
+    display: inline-block;
+    ul.legal {
+      @extend .col-md-8;
+      display: block;
+      text-align: left;
+      padding-left: 0;
+      .footer-social {
+        display: inline-block;
+        float: left;
+        li {
+          border: none;
+          margin-right: 0;
+          a i {
+            font-size: 28px !important;
+            &.footer-social-facebook-icon {
+              color: #34569c
+            }
+            &.footer-social-twitter-icon {
+              color: #00b5f0
+            }
+            &.footer-social-google-icon {
+              color: #dc4a38
+            }
+            &.footer-social-pinterest-icon {
+              color: #cb2027
+            }
+            &.footer-social-instagram-icon {
+              color: #663A19;
+              @extend .fa;
+              &:before{
+                content:$fa-var-instagram;
+              }
+            }
+            &.footer-social-linkedin-icon {
+              color:#0177B5;
+              @extend .fa;
+              &:before{
+                content:$fa-var-linkedin-square;
+              }
+            }
+            &.footer-social-youtube-icon {
+              color: #393939;
+              @extend .fa;
+              &:before{
+                content:$fa-var-youtube-square;
+              }
+            }
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+        display: inline-block;
+        margin-top: 10px;
+      }
+    }
+    .credit-cards {
+      @extend .col-md-4;
+      float: right;
+      text-align: right;
+      li {
+        height: 36px;
+        padding: 0;
+        background-image: url(../img/sprite-certificates.png);
+        margin: 0 0 10px 10px;
+        border: none;
+        &:nth-child(1) {
+          width: 50px;
+          background-position: 235px -10px;
+        }
+        &:nth-child(2) {
+          width: 54px;
+          background-position: 178px -10px;
+        }
+        &:nth-child(3) {
+          width: 55px;
+          background-position: 121px -10px;
+        }
+        &:nth-child(4) {
+          width: 55px;
+          background-position: 62px -10px;
+        }
+        &:nth-child(5) {
+          width: 89px;
+          background-position: 0px -60px;
+        }
+        &:nth-child(6) {
+          width: 105px;
+          background-position: -99px -59px;
+        }
+        &:nth-child(7) {
+          width: 114px;
+          background-position: -216px -59px;
+        }
+      }
+    }
+  }
+
+  /*------------------------------------------*/
+  @media (max-width: 1200px) {
+    .footer-signUp-bar ul {
+      width: 970px;
+    }
+    .footer-signUp-bar ul li.first {
+      font-size: 13px;
+    }
+    .footer-signUp-bar ul li form input {
+      min-width: 230px;
+    }
+
+  }
+
+  /*------------------------------------------*/
+  @media (max-width: 992px) {
+    .footer-signUp-bar ul {
+      width: auto;
+      height: auto;
+
+    }
+    .footer-signUp-bar ul li.first {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+    .footer-signUp-bar ul li.footer-signup-form {
+      margin: 20px auto;
+      text-align: center;
+    }
+    .footer-signUp-bar ul li form input {
+      min-width: 230px;
+      border-radius: 10px;
+    }
+    .footer-signUp-bar ul li form button {
+      margin-left: 0;
+      border-radius: 10px;
+    }
+    .footer-content-copyright {
+      ul.legal {
+        text-align: center;
+        .footer-social {
+          float: none;
+          .footer-social-item a i{
+            font-size: 40px !important;
+          }
+        }
+      }
+      ul.credit-cards{
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+
+  }
+
+  /*------------------------------------------*/
+  @media (max-width: 768px) {
+    .footer-content-nav ul li.first a {
+      font-size: 17px;
+    }
+    .footer-content-nav ul {
+      width: 100%;
+      &:not(:first-child) {
+        border-top: 1px solid darken($ink-4, 15%);
+        padding-top: 10px;
+      }
+    }
+    .footer-content-copyright {
+      margin-top: 0;
+    }
+    .footer-link{
+      margin-bottom: 10px !important;
+    }
+  }
+}

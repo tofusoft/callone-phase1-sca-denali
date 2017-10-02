@@ -1,0 +1,23 @@
+{
+  "gulp": {
+    "templates": [
+      "Templates/*"
+    ],
+    "images": [
+      "Images/*"
+    ],
+    "sass": [
+      "Sass/**/*.scss"
+    ],
+    "javascript": [
+      "JavaScript/*.js"
+    ]
+  },
+  "overrides": {
+    "suitecommerce/Header@1.0.3/Templates/header_menu.tpl": "Templates/qs_header_menu.tpl",
+    "suitecommerce/Header@1.0.3/Templates/header.tpl": "Templates/qs_header.tpl",
+    "suitecommerce/Header@1.0.3/Templates/header_logo.tpl": "Templates/qs_header_logo.tpl",
+    "suitecommerce/Header@1.0.3/Templates/header_profile.tpl": "Templates/qs_header_profile.tpl",
+    "suitecommerce/Header@1.0.3/Templates/header_sidebar.tpl": "Templates/qs_header_sidebar.tpl"
+  }
+}

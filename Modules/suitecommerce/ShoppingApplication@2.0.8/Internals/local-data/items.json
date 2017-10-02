@@ -1,0 +1,620 @@
+{
+  "total" : 23,
+  "items" : [ {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$490.00",
+      "onlinecustomerprice" : 490.0
+    },
+    "onlinecustomerprice_formatted" : "$490.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "New",
+    "quantityavailable" : 25.0,
+    "itemid" : "gt0001-Silver-Black",
+    "onlinecustomerprice" : 490.0,
+    "storedisplaythumbnail" : "gt0001-Silver-Black.jpeg",
+    "storedisplayname2" : "SPEED SERIES PRO FRAME SILVER BLACK",
+    "internalid" : 476,
+    "displayname" : "gt0001-Silver-Black"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$490.00",
+      "onlinecustomerprice" : 490.0
+    },
+    "onlinecustomerprice_formatted" : "$490.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "Shipps 3-5 days",
+    "quantityavailable" : 15.0,
+    "itemid" : "gt0001-Blue",
+    "onlinecustomerprice" : 490.0,
+    "storedisplaythumbnail" : "gt0001-Blue.jpeg",
+    "storedisplayname2" : "SPEED SERIES PRO FRAME BLUE",
+    "internalid" : 475,
+    "displayname" : "gt0001-Blue"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$330.00",
+      "onlinecustomerprice" : 330.0
+    },
+    "onlinecustomerprice_formatted" : "$330.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Street",
+    "stockdescription" : "Refurbished",
+    "quantityavailable" : 0.0,
+    "itemid" : "gt0020",
+    "onlinecustomerprice" : 330.0,
+    "storedisplaythumbnail" : "gt0020.jpeg",
+    "storedisplayname2" : "ZONE",
+    "internalid" : 494,
+    "displayname" : "gt0020"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$380.00",
+      "onlinecustomerprice" : 380.0
+    },
+    "onlinecustomerprice_formatted" : "$380.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "Refurbished",
+    "quantityavailable" : 10.0,
+    "itemid" : "gt0013",
+    "onlinecustomerprice" : 380.0,
+    "storedisplaythumbnail" : "gt0013.jpeg",
+    "storedisplayname2" : "FLY",
+    "internalid" : 487,
+    "displayname" : "gt0013"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$610.00",
+      "onlinecustomerprice" : 610.0
+    },
+    "onlinecustomerprice_formatted" : "$610.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0011",
+    "onlinecustomerprice" : 610.0,
+    "storedisplaythumbnail" : "gt0011.jpeg",
+    "storedisplayname2" : "FUELER",
+    "internalid" : 485,
+    "displayname" : "gt0011"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$270.00",
+      "onlinecustomerprice" : 270.0
+    },
+    "onlinecustomerprice_formatted" : "$270.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0010",
+    "onlinecustomerprice" : 270.0,
+    "storedisplaythumbnail" : "gt0010.jpeg",
+    "storedisplayname2" : "CAGE FRAME",
+    "internalid" : 484,
+    "displayname" : "gt0010"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$725.00",
+      "onlinecustomerprice" : 725.0
+    },
+    "onlinecustomerprice_formatted" : "$725.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0007",
+    "onlinecustomerprice" : 725.0,
+    "storedisplaythumbnail" : "gt0007.jpeg",
+    "storedisplayname2" : "PRO SERIES PRO 24",
+    "internalid" : 481,
+    "displayname" : "gt0007"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$330.00",
+      "onlinecustomerprice" : 330.0
+    },
+    "onlinecustomerprice_formatted" : "$330.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0009",
+    "onlinecustomerprice" : 330.0,
+    "storedisplaythumbnail" : "gt0009.jpeg",
+    "storedisplayname2" : "INTERCEPTOR PRO FRAME",
+    "internalid" : 483,
+    "displayname" : "gt0009"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$650.00",
+      "onlinecustomerprice" : 650.0
+    },
+    "onlinecustomerprice_formatted" : "$650.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0008",
+    "onlinecustomerprice" : 650.0,
+    "storedisplaythumbnail" : "gt0008.jpeg",
+    "storedisplayname2" : "PRO SERIES MINI",
+    "internalid" : 482,
+    "displayname" : "gt0008"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$1,150.00",
+      "onlinecustomerprice" : 1150.0
+    },
+    "onlinecustomerprice_formatted" : "$1,150.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0004",
+    "onlinecustomerprice" : 1150.0,
+    "storedisplaythumbnail" : "gt0004.jpeg",
+    "storedisplayname2" : "SPEED SERIES PRO XL",
+    "internalid" : 478,
+    "displayname" : "gt0004"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$650.00",
+      "onlinecustomerprice" : 650.0
+    },
+    "onlinecustomerprice_formatted" : "$650.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0005",
+    "onlinecustomerprice" : 650.0,
+    "storedisplaythumbnail" : "gt0005.jpeg",
+    "storedisplayname2" : "PRO SERIES EXPERT",
+    "internalid" : 479,
+    "displayname" : "gt0005"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$1,150.00",
+      "onlinecustomerprice" : 1150.0
+    },
+    "onlinecustomerprice_formatted" : "$1,150.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0003",
+    "onlinecustomerprice" : 1150.0,
+    "storedisplaythumbnail" : "gt0003.jpeg",
+    "storedisplayname2" : "SPEED SERIES PRO",
+    "internalid" : 477,
+    "displayname" : "gt0003"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$1,220.00",
+      "onlinecustomerprice" : 1220.0
+    },
+    "onlinecustomerprice_formatted" : "$1,220.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0002",
+    "onlinecustomerprice" : 1220.0,
+    "storedisplaythumbnail" : "gt0002.jpeg",
+    "storedisplayname2" : "SPEED SERIES PRO 26",
+    "internalid" : 474,
+    "displayname" : "gt0002"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$650.00",
+      "onlinecustomerprice" : 650.0
+    },
+    "onlinecustomerprice_formatted" : "$650.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0006",
+    "onlinecustomerprice" : 650.0,
+    "storedisplaythumbnail" : "gt0006.jpeg",
+    "storedisplayname2" : "PRO SERIES PRO XL",
+    "internalid" : 480,
+    "displayname" : "gt0006"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$350.00",
+      "onlinecustomerprice" : 350.0
+    },
+    "onlinecustomerprice_formatted" : "$350.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0015",
+    "onlinecustomerprice" : 350.0,
+    "storedisplaythumbnail" : "gt0015.jpeg",
+    "storedisplayname2" : "FLY 16",
+    "internalid" : 489,
+    "displayname" : "gt0015"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$250.00",
+      "onlinecustomerprice" : 250.0
+    },
+    "onlinecustomerprice_formatted" : "$250.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0017",
+    "onlinecustomerprice" : 250.0,
+    "storedisplaythumbnail" : "gt0017.jpeg",
+    "storedisplayname2" : "AIR",
+    "internalid" : 491,
+    "displayname" : "gt0017"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$330.00",
+      "onlinecustomerprice" : 330.0
+    },
+    "onlinecustomerprice_formatted" : "$330.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0016",
+    "onlinecustomerprice" : 330.0,
+    "storedisplaythumbnail" : "gt0016.jpeg",
+    "storedisplayname2" : "RICOCHET",
+    "internalid" : 490,
+    "displayname" : "gt0016"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$360.00",
+      "onlinecustomerprice" : 360.0
+    },
+    "onlinecustomerprice_formatted" : "$360.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0014",
+    "onlinecustomerprice" : 360.0,
+    "storedisplaythumbnail" : "gt0014.jpeg",
+    "storedisplayname2" : "FLY 18",
+    "internalid" : 488,
+    "displayname" : "gt0014"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$440.00",
+      "onlinecustomerprice" : 440.0
+    },
+    "onlinecustomerprice_formatted" : "$440.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Dirt",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0012",
+    "onlinecustomerprice" : 440.0,
+    "storedisplaythumbnail" : "gt0012.jpeg",
+    "storedisplayname2" : "BUMP",
+    "internalid" : 486,
+    "displayname" : "gt0012"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$440.00",
+      "onlinecustomerprice" : 440.0
+    },
+    "onlinecustomerprice_formatted" : "$440.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "</b>This BMX will let you do the 'perform'ance of your life! Time and time again on the track or the park!</b>\r\nFRAME a NEW STRAIGHT GAUGE, 3 TUBES CRMO, (TT, ST, DT), DUMPED C/S, LUBID S/S, 14MM DROPOUTS, C/S MOUNTED BRAKE MOUNTS, W/ REMOVABLE ROTOR TABS, COLOR x Satin Black, FORK GT, CR-MO STEERER, HI-TEN, 31.8-28.6 TAPER, 3/8, 1.125, CRANK GT 3 PCS CR-MO, 8T, 175MM AL 28T, BOTTOM BRACKET SEALED MID, PEDALS GT PRO NYLON, CR-MO AXLE, REAR COG KT CR-MO, 10T, CHAIN KMC Z510, RIMS ALIENATION BLACKSHEEP, DW 32F, 36R HOLE, TIRES GT STREET, 2.225 F, 2.0 R, WIRE, HUBS GT AL CASSETTE SEALED, 3/8\", 14MMR 32F, 36R HOLE, BRAKES TEKTRO FX340R, BRAKE LEVERS TEKTRO XL320, HANDLEBARS GT FREESTYLE, 690, STEM GT FREESTYLE, 50, HEADSET FSA EXTERNAL, 1.125, SADDLE GT STREET UNIFIED, SEATPOST GT UNIFIED, 25.4 x 200, EXTRAS SST ROTOR, PEGS FORGED STEEL",
+    "custitem_bike_type" : "Street",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "gt0018",
+    "onlinecustomerprice" : 440.0,
+    "storedisplaythumbnail" : "gt0018.jpeg",
+    "storedisplayname2" : "PERFORMER 20",
+    "internalid" : 492,
+    "displayname" : "gt0018"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$380.00",
+      "onlinecustomerprice" : 380.0,
+      "priceschedule" : [ {
+        "minimumquantity" : 0.0,
+        "price" : 380.0,
+        "price_formatted" : "$380.00",
+        "maximumquantity" : 5.0
+      }, {
+        "minimumquantity" : 5.0,
+        "price" : 370.5,
+        "price_formatted" : "$370.50",
+        "maximumquantity" : 10.0
+      }, {
+        "minimumquantity" : 10.0,
+        "price" : 361.0,
+        "price_formatted" : "$361.00"
+      } ]
+    },
+    "onlinecustomerprice_formatted" : "$380.00",
+    "itemoptions_detail" : {
+      "matrixtype" : "parent",
+      "fields" : [ {
+        "values" : [ {
+          "" : "- Select -"
+        }, {
+          "1" : "Blue"
+        }, {
+          "2" : "Silver"
+        }, {
+          "3" : "Black"
+        }, {
+          "4" : "Chrome"
+        } ],
+        "ismatrixdimension" : true,
+        "ismandatory" : true,
+        "label" : "GT Matrix Colors",
+        "internalid" : "custcol2",
+        "type" : "select"
+      }, {
+        "values" : [ {
+          "" : "- Select -"
+        }, {
+          "3" : "20"
+        }, {
+          "4" : "24"
+        }, {
+          "5" : "26"
+        } ],
+        "ismatrixdimension" : true,
+        "ismandatory" : true,
+        "label" : "Matrix Tire Size",
+        "internalid" : "custcol3",
+        "type" : "select"
+      } ]
+    },
+    "onlinematrixpricerange" : "380 570",
+    "storedescription" : "<span style=\"color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);\">The 2013 GT Speed Series Pro XL BMX bike features a GT Speed Series aftermarket aluminum frame with 1-1/8\" integrated headtube, GT chromoly fork with tapered and butted legs, GT frontload stem, 8\" chromoly bars, GT grips, alloy V-brake and lever, 175mm FSA Assault 2-pc alloy cranks with sealed BB30 bottom bracket,&nbsp;<br></span>",
+    "custitem_bike_type" : "Race",
+    "stockdescription" : "",
+    "quantityavailable" : "",
+    "itemid" : "0001",
+    "onlinecustomerprice" : 380.0,
+    "storedisplaythumbnail" : "speed-series-pro.png",
+    "storedisplayname2" : "SPEED SERIES PRO",
+    "internalid" : 74,
+    "displayname" : "SPEED SERIES PRO"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$380.00",
+      "onlinecustomerprice" : 380.0
+    },
+    "onlinecustomerprice_formatted" : "$380.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Street",
+    "stockdescription" : "New",
+    "quantityavailable" : 0.0,
+    "itemid" : "gt0019",
+    "onlinecustomerprice" : 380.0,
+    "storedisplaythumbnail" : "gt0019.jpeg",
+    "storedisplayname2" : "COMPE",
+    "internalid" : 493,
+    "displayname" : "gt0019"
+  }, {
+    "onlinecustomerprice_detail" : {
+      "onlinecustomerprice_formatted" : "$285.00",
+      "onlinecustomerprice" : 285.0
+    },
+    "onlinecustomerprice_formatted" : "$285.00",
+    "itemoptions_detail" : {
+    },
+    "onlinematrixpricerange" : "",
+    "storedescription" : "",
+    "custitem_bike_type" : "Street",
+    "stockdescription" : "",
+    "quantityavailable" : 0.0,
+    "itemid" : "gt0021",
+    "onlinecustomerprice" : 285.0,
+    "storedisplaythumbnail" : "gt0021.jpeg",
+    "storedisplayname2" : "SLAMMER",
+    "internalid" : 495,
+    "displayname" : "gt0021"
+  } ],
+  "facets" : [ {
+    "id" : "custitem_bike_brands",
+    "name" : "Brand",
+    "values" : [ {
+      "name" : "GT",
+      "count" : 23
+    }, {
+      "name" : "Trek",
+      "count" : 26
+    }, {
+      "name" : "Voodoo",
+      "count" : 5
+    } ]
+  }, {
+    "id" : "custitem_bike_colors",
+    "name" : "Colors",
+    "values" : [ {
+      "name" : "",
+      "count" : 1
+    }, {
+      "name" : "Black",
+      "count" : 4
+    }, {
+      "name" : "Blue",
+      "count" : 6
+    }, {
+      "name" : "Chrome",
+      "count" : 5
+    }, {
+      "name" : "Gray",
+      "count" : 3
+    }, {
+      "name" : "Red",
+      "count" : 2
+    }, {
+      "name" : "White",
+      "count" : 2
+    } ]
+  }, {
+    "id" : "custitem_bike_type",
+    "name" : "Bike Type",
+    "values" : [ {
+      "name" : "Dirt",
+      "count" : 8
+    }, {
+      "name" : "Race",
+      "count" : 11
+    }, {
+      "name" : "Street",
+      "count" : 4
+    } ]
+  }, {
+    "id" : "custitem_exclude_from_search",
+    "name" : "kjhgfd",
+    "values" : [ {
+      "name" : "false",
+      "count" : 23
+    }, {
+      "name" : "true",
+      "count" : 12
+    } ]
+  }, {
+    "id" : "custitem_gt_matrix_colors",
+    "name" : "GT Matrix Colors",
+    "values" : [ {
+      "name" : "",
+      "count" : 22
+    }, {
+      "name" : "Black",
+      "count" : 1
+    }, {
+      "name" : "Blue",
+      "count" : 1
+    }, {
+      "name" : "Chrome",
+      "count" : 1
+    }, {
+      "name" : "Silver",
+      "count" : 1
+    } ]
+  }, {
+    "id" : "custitem_matrix_tire_size",
+    "name" : "Matrix Tire Size",
+    "values" : [ {
+      "name" : "",
+      "count" : 22
+    }, {
+      "name" : "20",
+      "count" : 1
+    }, {
+      "name" : "24",
+      "count" : 1
+    }, {
+      "name" : "26",
+      "count" : 1
+    } ]
+  }, {
+    "id" : "custitem_tire_size",
+    "name" : "Tire size",
+    "values" : [ {
+      "name" : "",
+      "count" : 1
+    }, {
+      "name" : "16",
+      "count" : 1
+    }, {
+      "name" : "18",
+      "count" : 1
+    }, {
+      "name" : "20",
+      "count" : 18
+    }, {
+      "name" : "24",
+      "count" : 1
+    }, {
+      "name" : "26",
+      "count" : 1
+    } ]
+  }, {
+    "id" : "pricelevel5",
+    "name" : "jmhgfd",
+    "values" : [ ]
+  } ],
+  "links" : [ ],
+  "locale" : {
+    "country" : "US",
+    "language" : "en",
+    "currency" : "USD"
+  },
+  "code" : 200
+}

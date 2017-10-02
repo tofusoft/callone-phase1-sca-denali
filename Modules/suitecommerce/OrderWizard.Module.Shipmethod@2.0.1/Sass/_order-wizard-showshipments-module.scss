@@ -1,0 +1,143 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.order-wizard-showshipments-module-container{
+	@extend .box-column;
+}
+
+.order-wizard-showshipments-module-shipping-address{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+
+.order-wizard-showshipments-module-shipping-method{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+}
+.order-wizard-showshipments-module-shipping-details{
+	@extend .box-column;
+}
+.order-wizard-showshipments-module-cart-details{
+	margin: 0 0 $sc-medium-margin;
+}
+.order-wizard-showshipments-module-shipping-details-body {
+	@extend .row;
+}
+.order-wizard-showshipments-module-shipping-details-address,
+.order-wizard-showshipments-module-shipping-details-method {
+	@extend .col-sm-6;
+}
+.order-wizard-showshipments-module-shipping-details-address {
+	.address-details-info {
+		margin-bottom: 0;
+	}
+}
+.order-wizard-showshipments-module-shipping-details-method {
+	.order-wizard-showshipments-module-shipping-details-method-info-card {
+		min-height: inherit;
+	}
+}
+.order-wizard-showshipments-module-shipping-details-address-link {
+	margin-top: $sc-base-margin * 3;
+	margin-bottom: $sc-base-margin * 3;
+	display: inline-block;
+	@media (min-width: $screen-md-min) {
+		margin-bottom: 0;
+	}
+}
+.order-wizard-showshipments-module-shipping-title {
+	margin-bottom: $sc-medium-margin;
+}
+
+.order-wizard-showshipments-module-edit-cart-link{
+
+	display: block;	
+	padding: $sc-base-padding * 3 $sc-base-padding * 4;
+	margin: - $sc-base-margin * 4;
+	margin-bottom:$sc-base-margin * 3;
+	border-bottom:1px solid $sc-color-theme-background;
+}
+
+.order-wizard-showshipments-module-shipping-options{
+	@extend .input-generic;
+}
+.order-wizard-showshipments-module-shipping-details-method-info-card {
+	@extend .info-card;
+}
+.order-wizard-showshipments-module-cart-details-accordion-head{
+	@extend .accordion-head;
+}
+.order-wizard-showshipments-module-cart-details-accordion-head-toggle{
+	@extend .accordion-head-toggle;
+}
+.order-wizard-showshipments-module-cart-details-accordion-toggle-icon{
+	@extend .accordion-toggle-icon;
+}
+.order-wizard-showshipments-module-cart-details-accordion-body{
+	@extend .accordion-body;
+
+	.item-view-cell-navigable-item-quantity-label,
+	.item-view-cell-navigable-item-unit-price-label,
+	.item-view-cell-navigable-item-amount-label{
+		@media (min-width: $screen-md-min){
+			display: none;
+		}
+	}
+
+	.item-view-cell-navigable-amount{
+		text-align: left;
+	}
+
+	.order-wizard-showshipments-module-accordion-container-table-header-amount,
+	.order-wizard-showshipments-module-accordion-container-table-header-totalprice,
+	.order-wizard-showshipments-module-accordion-container-table-header-quantity,
+	.item-view-cell-navigable-item-quantity,
+	.item-view-cell-navigable-item-unit-price,
+	.item-view-cell-navigable-amount{
+		@media(min-width: $screen-md-min){
+			width: 15%;
+			text-align: right;
+		}
+	}
+}
+.order-wizard-showshipments-module-accordion-container{
+	padding: $sc-base-padding * 4;
+}
+
+.order-wizard-showshipments-module-accordion-container-table-header {
+	display: none;
+	@media (min-width: $screen-md-min) {
+		display: table-header-group;
+		width: 100%;
+	}
+}
+.order-wizard-showshipments-module-accordion-container-table-header-image {
+	@extend .item-view-cell-navigable-item-image;
+	font-size: $sc-base-font-size;
+	font-weight: $sc-font-weight-semibold;
+}
+.order-wizard-showshipments-module-accordion-container-table-header-details {
+	color:$sc-color-theme-light;
+	font-size: $sc-base-font-size;
+	font-weight: $sc-font-weight-semibold;
+}
+.order-wizard-showshipments-module-accordion-container-table-header-quantity {
+	color:$sc-color-theme-light;
+	font-size: $sc-base-font-size;
+	font-weight: $sc-font-weight-semibold;
+}
+.order-wizard-showshipments-module-accordion-container-table-header-totalprice,
+.order-wizard-showshipments-module-accordion-container-table-header-amount {
+	color:$sc-color-theme-light;
+	font-size: $sc-base-font-size;
+	font-weight: $sc-font-weight-semibold;
+}
+
+
+.order-wizard-showshipments-module-shipment-table{
+	@extend .table-flex-item-navigable;
+}

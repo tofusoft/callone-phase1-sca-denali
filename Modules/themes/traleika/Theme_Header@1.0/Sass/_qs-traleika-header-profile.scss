@@ -1,0 +1,24 @@
+//////////////////////////////////////////////////////////
+//login register 
+
+.header-profile-menu-login{
+	color: $sc-color-primary;
+
+	@media (min-width: $screen-md-min) {
+		color: $sc-color-tertiary;
+	}
+}
+
+.header-profile-menu-login-container{
+	margin-right:$sc-base-margin;
+}
+
+.header-profile-menu-login li{
+	display:inline-block;
+}
+
+.header-profile-login-icon{
+	@extend .fa;
+	@extend %fa-user;
+	font-size: $sc-h4-font-size;
+}

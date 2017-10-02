@@ -1,0 +1,13 @@
+{
+    "gulp": {
+        "templates": [
+            "Templates/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ]
+    },
+    "overrides": {
+        "suitecommerce/Facets@2.0.8/Templates/facets_item_cell_grid.tpl": "Templates/qs_traleika_facets_item_cell_grid.tpl"
+    }
+}

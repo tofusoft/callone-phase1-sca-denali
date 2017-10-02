@@ -1,0 +1,118 @@
+/*
+	© 2015 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/
+
+.product-list-edit-item-modal-body{
+	@extend .row;
+}
+
+.product-list-edit-item-image{
+	@extend .col-xs-12;
+	@extend .col-sm-4;
+	margin-bottom: $sc-base-margin * 3;
+}
+
+.product-list-edit-item-details {
+	@extend .col-xs-12;
+	@extend .col-sm-8;
+}
+
+.product-list-edit-item-modal-footer{
+	margin-top: $sc-medium-margin;
+}
+
+.product-list-edit-item-anchor-name {
+	@extend .small-title-navigable;
+}
+
+.product-list-edit-item-label {
+	@extend .input-label;
+	margin-top: $sc-small-margin;
+	display:block;
+}
+
+.product-list-edit-item-price {
+	margin-top: $sc-base-margin;
+	clear: both;
+}
+
+.product-list-edit-item-button-quantity-add, .product-list-edit-item-button-quantity-minus {
+	@extend .button-secondary;
+
+	background-color:lighten($sc-color-theme, 20%);
+	border:1px solid lighten($sc-color-theme, 20%);;
+	width: $sc-target-size-mobile;
+	height: $sc-target-size-mobile;
+	float:left;
+
+	@media (min-width: $screen-md-min) {
+		display: none;
+	}
+}
+
+.product-list-edit-item-quantity {
+	@include clearfix;
+	clear:both;
+	display:block;
+}
+
+.product-list-edit-item-quantity-help{
+	clear: both;
+	display: block;
+	font-weight:$sc-font-weight-light;
+	margin-top: $sc-small-margin;
+}
+
+.product-list-edit-item-input-quantity {
+	@extend .item-details-quantity-value;
+	display: block;
+	float:left;
+}
+
+.product-list-edit-item-priority {
+	margin-top: $sc-small-margin;
+	display:block;
+}
+
+.product-list-edit-item-select-priority {
+	@extend .input-medium;
+}
+
+.product-list-edit-item-textarea {
+	@extend .input-textarea;
+}
+
+.product-list-edit-item-button-edit {
+	@extend .button-medium;
+	@extend .button-primary;
+}
+
+.product-list-edit-item-button-cancel {
+	@extend .button-medium;
+	@extend .button-secondary;
+	@extend .button-positioning-stack2next;
+}
+.global-views-modal.global-views-modal-large {
+	.product-list-edit-item-textarea {
+		width: 100%;
+	}
+}
+
+.product-list-edit-item-label-optional {
+	@extend .input-optional;
+	display: inline;
+}
+
+.product-list-edit-item-priority-input{
+	@extend .input-medium;
+}
+
+.product-list-edit-item-notes{}
+.product-list-edit-item-basic{}
+.product-list-edit-item-name{}
+.product-list-edit-item-added{}
+.product-list-edit-item-rating{}
+.product-list-edit-item-options{}

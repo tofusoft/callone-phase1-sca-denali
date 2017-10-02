@@ -1,0 +1,22 @@
+.cart-summary-title{
+	background:$sc-color-theme-background-light;
+	text-align:center;
+	padding:$sc-base-padding * 4 0px $sc-base-padding * 4 0px;
+	margin-bottom:$sc-medium-margin;
+}
+
+.cart-summary-button-container {
+	@media (min-width: $screen-sm-min), (orientation: landscape) {
+		@extend .col-xs-12;
+		background:$sc-color-theme-background-light;
+		padding:$sc-base-padding * 3;
+		margin-bottom:$sc-small-margin * 2;
+		display: block;
+		border: 1px solid $sc-color-theme-light;
+		border-top: none;
+	}
+}
+
+.cart-summary-container {
+	border: 1px solid $sc-color-theme-light
+}
