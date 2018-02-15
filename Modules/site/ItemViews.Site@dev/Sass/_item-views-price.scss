@@ -12,3 +12,7 @@
 .item-views-price{
     min-height: 64px;
 }
+
+div[data-cart-option-id="custcol_ae_pricelevel"] {
+    display: none;
+}
